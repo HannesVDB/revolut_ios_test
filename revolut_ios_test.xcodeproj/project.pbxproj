@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		844152692360A1F300E4A7B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844152682360A1F300E4A7B2 /* AppDelegate.swift */; };
-		8441526B2360A1F300E4A7B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441526A2360A1F300E4A7B2 /* SceneDelegate.swift */; };
 		8441526D2360A1F300E4A7B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441526C2360A1F300E4A7B2 /* ViewController.swift */; };
 		844152702360A1F300E4A7B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8441526E2360A1F300E4A7B2 /* Main.storyboard */; };
 		844152732360A1F300E4A7B2 /* revolut_ios_test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 844152712360A1F300E4A7B2 /* revolut_ios_test.xcdatamodeld */; };
@@ -30,7 +29,6 @@
 /* Begin PBXFileReference section */
 		844152652360A1F300E4A7B2 /* revolut_ios_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = revolut_ios_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844152682360A1F300E4A7B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8441526A2360A1F300E4A7B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8441526C2360A1F300E4A7B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8441526F2360A1F300E4A7B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		844152722360A1F300E4A7B2 /* revolut_ios_test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = revolut_ios_test.xcdatamodel; sourceTree = "<group>"; };
@@ -82,13 +80,11 @@
 			isa = PBXGroup;
 			children = (
 				844152682360A1F300E4A7B2 /* AppDelegate.swift */,
-				8441526A2360A1F300E4A7B2 /* SceneDelegate.swift */,
-				8441526C2360A1F300E4A7B2 /* ViewController.swift */,
-				8441526E2360A1F300E4A7B2 /* Main.storyboard */,
-				844152742360A1F500E4A7B2 /* Assets.xcassets */,
-				844152762360A1F500E4A7B2 /* LaunchScreen.storyboard */,
-				844152792360A1F500E4A7B2 /* Info.plist */,
-				844152712360A1F300E4A7B2 /* revolut_ios_test.xcdatamodeld */,
+				844152902360A2EB00E4A7B2 /* Models */,
+				8441528D2360A2D900E4A7B2 /* Modules */,
+				8441528F2360A2E400E4A7B2 /* Persistence */,
+				8441528E2360A2E000E4A7B2 /* Service */,
+				844152912360A2F200E4A7B2 /* Supporting Files */,
 			);
 			path = revolut_ios_test;
 			sourceTree = "<group>";
@@ -100,6 +96,47 @@
 				844152842360A1F500E4A7B2 /* Info.plist */,
 			);
 			path = revolut_ios_testTests;
+			sourceTree = "<group>";
+		};
+		8441528D2360A2D900E4A7B2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8441526C2360A1F300E4A7B2 /* ViewController.swift */,
+				8441526E2360A1F300E4A7B2 /* Main.storyboard */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8441528E2360A2E000E4A7B2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		8441528F2360A2E400E4A7B2 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				844152712360A1F300E4A7B2 /* revolut_ios_test.xcdatamodeld */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		844152902360A2EB00E4A7B2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		844152912360A2F200E4A7B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				844152792360A1F500E4A7B2 /* Info.plist */,
+				844152742360A1F500E4A7B2 /* Assets.xcassets */,
+				844152762360A1F500E4A7B2 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,7 +242,6 @@
 			files = (
 				8441526D2360A1F300E4A7B2 /* ViewController.swift in Sources */,
 				844152692360A1F300E4A7B2 /* AppDelegate.swift in Sources */,
-				8441526B2360A1F300E4A7B2 /* SceneDelegate.swift in Sources */,
 				844152732360A1F300E4A7B2 /* revolut_ios_test.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,7 +404,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AAGAT9WX84;
-				INFOPLIST_FILE = revolut_ios_test/Info.plist;
+				INFOPLIST_FILE = "revolut_ios_test/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -386,7 +422,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AAGAT9WX84;
-				INFOPLIST_FILE = revolut_ios_test/Info.plist;
+				INFOPLIST_FILE = "revolut_ios_test/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

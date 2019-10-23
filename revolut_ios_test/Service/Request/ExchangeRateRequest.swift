@@ -26,8 +26,7 @@ struct ExchangeRateRequest: Request {
             return nil
         }
         return [
-            "pairs": "\(currencyAbr)\(comparedAbr)",
-//            "pairs": "\(comparedAbr)\(currencyAbr)"
+            "pairs": "\(currencyAbr)\(comparedAbr)"
         ]
     }
 }

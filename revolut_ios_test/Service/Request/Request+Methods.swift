@@ -23,7 +23,7 @@ extension Request {
         guard
             let url = url,
             let components = URLComponents(url: url, resolvingAgainstBaseURL: false) else {
-            fatalError("invalid URL")
+                throw BackendError.invalidURL
         }
         
         var requestURL: URL
@@ -35,12 +35,14 @@ extension Request {
             let newURL = baseURL.appendingPathComponent(components.path)
             requestURL = newURL
         } else {
-            fatalError("throw ResponseError.invalidURL")
+            throw BackendError.invalidURL
         }
         // Append the original query paramters to the new request url.
         var requestComponents = URLComponents(url: requestURL, resolvingAgainstBaseURL: false)
         requestComponents?.queryItems = components.queryItems
-        guard let correctURL = requestComponents?.url else { fatalError("Invalid URL") }
+        guard let correctURL = requestComponents?.url else {
+            throw BackendError.invalidURL
+        }
         
         // Return the relative url appended to the base url.
         return correctURL.appendingQuery(from: self)

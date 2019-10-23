@@ -8,46 +8,16 @@
 
 import Foundation
 
-enum ApiResponse<T: Codable> {
+final class Service {
     
-    case failure(Error?)
-    case success(T?)
-    
-}
-
-protocol BackendRequesting {
-    
-    func exchangeRate(for currency: Currency, with comparedCurrency: Currency, completion: ((_ response: ApiResponse<[String: Double]>) -> Void)?)
-
-}
-
-class Service: BackendRequesting {
-    
+    /// Shared as a Singleton to request data from the backend
     static let shared = Service()
         
     private init() {
 
     }
-    
-    func exchangeRate(for currency: Currency, with comparedCurrency: Currency, completion: ((_ response: ApiResponse<[String: Double]>) -> Void)?) {
-        let request = ExchangeRateRequest(currency: currency, comparedCurrency: comparedCurrency)
-        do {
-            let urlRequest = try request.makeURLRequest(with: URL(string: "https://europe-west1-revolut-230009.cloudfunctions.net/"))
-            execute(urlRequest, with: JSONSerializer<[String: Double]>()) { response in
-                switch response {
-                case .failure(let error):
-                    completion?(.failure(error))
-                case .success(let response):
-                    completion?(.success(response))
-                }
-            }
-        } catch {
-            completion?(.failure(error))
-        }
-    }
         
     @discardableResult
-    // swiftlint:disable function_parameter_count
     func execute<T: Codable>(_ urlRequest: URLRequest, with serializer: JSONSerializer<T>, completion: @escaping (_ response: ApiResponse<T>) -> Void) -> URLSessionDataTask {
         // Prepare the session.
         let session = URLSession(configuration: URLSessionConfiguration.default, delegate: nil, delegateQueue: nil)

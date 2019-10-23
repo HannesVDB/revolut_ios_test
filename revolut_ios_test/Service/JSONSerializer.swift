@@ -9,14 +9,13 @@
 import Foundation
 
 class JSONSerializer<T: Codable> {
-    
+    /// Serialize given data to a codable object
     func object<T: Codable>(data: Data, with decoder: JSONDecoder? = JSONDecoder()) throws -> T? {
         do {
             let item = try decoder?.decode(T.self, from: data)
             return item
         } catch {
-            print(error)
-            fatalError("Something wrong")
+            throw BackendError.serializationError
         }
     }
 }

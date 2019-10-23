@@ -14,6 +14,14 @@
 		844152752360A1F500E4A7B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844152742360A1F500E4A7B2 /* Assets.xcassets */; };
 		844152782360A1F500E4A7B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844152762360A1F500E4A7B2 /* LaunchScreen.storyboard */; };
 		844152832360A1F500E4A7B2 /* revolut_ios_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844152822360A1F500E4A7B2 /* revolut_ios_testTests.swift */; };
+		844152932360A42A00E4A7B2 /* currencies.json in Resources */ = {isa = PBXBuildFile; fileRef = 844152922360A42A00E4A7B2 /* currencies.json */; };
+		844152952360A48000E4A7B2 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844152942360A48000E4A7B2 /* Currency.swift */; };
+		844152972360A4DB00E4A7B2 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844152962360A4DB00E4A7B2 /* Service.swift */; };
+		8441529A2360A70B00E4A7B2 /* ExchangeRateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844152992360A70B00E4A7B2 /* ExchangeRateRequest.swift */; };
+		8441529C2360A86500E4A7B2 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441529B2360A86500E4A7B2 /* RequestMethod.swift */; };
+		8441529E2360A87D00E4A7B2 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441529D2360A87D00E4A7B2 /* Request.swift */; };
+		84D9B8662360B5F50012E377 /* JSONSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9B8652360B5F50012E377 /* JSONSerializer.swift */; };
+		84D9B8682360B6110012E377 /* Request+Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9B8672360B6110012E377 /* Request+Methods.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +46,14 @@
 		8441527E2360A1F500E4A7B2 /* revolut_ios_testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = revolut_ios_testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		844152822360A1F500E4A7B2 /* revolut_ios_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = revolut_ios_testTests.swift; sourceTree = "<group>"; };
 		844152842360A1F500E4A7B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		844152922360A42A00E4A7B2 /* currencies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = currencies.json; sourceTree = "<group>"; };
+		844152942360A48000E4A7B2 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		844152962360A4DB00E4A7B2 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		844152992360A70B00E4A7B2 /* ExchangeRateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateRequest.swift; sourceTree = "<group>"; };
+		8441529B2360A86500E4A7B2 /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
+		8441529D2360A87D00E4A7B2 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		84D9B8652360B5F50012E377 /* JSONSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSerializer.swift; sourceTree = "<group>"; };
+		84D9B8672360B6110012E377 /* Request+Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Request+Methods.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +126,10 @@
 		8441528E2360A2E000E4A7B2 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				8441529B2360A86500E4A7B2 /* RequestMethod.swift */,
+				844152962360A4DB00E4A7B2 /* Service.swift */,
+				844152982360A6FF00E4A7B2 /* Request */,
+				84D9B8652360B5F50012E377 /* JSONSerializer.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -125,6 +145,7 @@
 		844152902360A2EB00E4A7B2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				844152942360A48000E4A7B2 /* Currency.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -132,11 +153,22 @@
 		844152912360A2F200E4A7B2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				844152922360A42A00E4A7B2 /* currencies.json */,
 				844152792360A1F500E4A7B2 /* Info.plist */,
 				844152742360A1F500E4A7B2 /* Assets.xcassets */,
 				844152762360A1F500E4A7B2 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		844152982360A6FF00E4A7B2 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				844152992360A70B00E4A7B2 /* ExchangeRateRequest.swift */,
+				8441529D2360A87D00E4A7B2 /* Request.swift */,
+				84D9B8672360B6110012E377 /* Request+Methods.swift */,
+			);
+			path = Request;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +254,7 @@
 			files = (
 				844152782360A1F500E4A7B2 /* LaunchScreen.storyboard in Resources */,
 				844152752360A1F500E4A7B2 /* Assets.xcassets in Resources */,
+				844152932360A42A00E4A7B2 /* currencies.json in Resources */,
 				844152702360A1F300E4A7B2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,7 +273,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844152952360A48000E4A7B2 /* Currency.swift in Sources */,
+				84D9B8662360B5F50012E377 /* JSONSerializer.swift in Sources */,
+				84D9B8682360B6110012E377 /* Request+Methods.swift in Sources */,
+				8441529E2360A87D00E4A7B2 /* Request.swift in Sources */,
 				8441526D2360A1F300E4A7B2 /* ViewController.swift in Sources */,
+				8441529A2360A70B00E4A7B2 /* ExchangeRateRequest.swift in Sources */,
+				844152972360A4DB00E4A7B2 /* Service.swift in Sources */,
+				8441529C2360A86500E4A7B2 /* RequestMethod.swift in Sources */,
 				844152692360A1F300E4A7B2 /* AppDelegate.swift in Sources */,
 				844152732360A1F300E4A7B2 /* revolut_ios_test.xcdatamodeld in Sources */,
 			);

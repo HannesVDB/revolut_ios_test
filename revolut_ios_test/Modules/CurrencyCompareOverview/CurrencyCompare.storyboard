@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Ni-BJ-BBd">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Currency Compare View Controller-->
+        <scene sceneID="R4d-hS-ir0">
+            <objects>
+                <viewController id="4Ni-BJ-BBd" customClass="CurrencyCompareViewController" customModule="revolut_ios_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y7a-bH-uUo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HeA-K0-wrm">
+                                <rect key="frame" x="31" y="372.5" width="352.5" height="151"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Ym7-Wf-wxq">
+                                        <rect key="frame" x="156" y="0.0" width="40" height="40"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4z-1y-r1t">
+                                        <rect key="frame" x="10" y="40" width="332.5" height="30"/>
+                                        <state key="normal" title="Add currency pair"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a currency pair to compare their live rates" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqv-Ic-Pfn">
+                                        <rect key="frame" x="20" y="90" width="312.5" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="Ym7-Wf-wxq" firstAttribute="top" secondItem="HeA-K0-wrm" secondAttribute="top" id="79w-S8-Wti"/>
+                                    <constraint firstItem="m4z-1y-r1t" firstAttribute="top" secondItem="Ym7-Wf-wxq" secondAttribute="bottom" id="Bfk-5s-0mE"/>
+                                    <constraint firstAttribute="trailing" secondItem="m4z-1y-r1t" secondAttribute="trailing" constant="10" id="EpC-hZ-cNL"/>
+                                    <constraint firstItem="Kqv-Ic-Pfn" firstAttribute="top" secondItem="m4z-1y-r1t" secondAttribute="bottom" constant="20" id="F2q-WF-kvB"/>
+                                    <constraint firstItem="Ym7-Wf-wxq" firstAttribute="centerX" secondItem="HeA-K0-wrm" secondAttribute="centerX" id="FYv-cU-E3H"/>
+                                    <constraint firstItem="Kqv-Ic-Pfn" firstAttribute="leading" secondItem="HeA-K0-wrm" secondAttribute="leading" constant="20" id="LKz-cU-sOM"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kqv-Ic-Pfn" secondAttribute="trailing" constant="20" id="ODI-3A-fm8"/>
+                                    <constraint firstItem="m4z-1y-r1t" firstAttribute="leading" secondItem="HeA-K0-wrm" secondAttribute="leading" constant="10" id="a2e-7F-bfD"/>
+                                    <constraint firstAttribute="bottom" secondItem="Kqv-Ic-Pfn" secondAttribute="bottom" constant="20" id="m36-G2-jEj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HeA-K0-wrm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Fl7-vL-RvA" secondAttribute="leading" constant="20" id="4WT-ID-nTz"/>
+                            <constraint firstItem="HeA-K0-wrm" firstAttribute="centerY" secondItem="y7a-bH-uUo" secondAttribute="centerY" id="Teb-cD-gVS"/>
+                            <constraint firstItem="HeA-K0-wrm" firstAttribute="centerX" secondItem="y7a-bH-uUo" secondAttribute="centerX" id="htc-ud-3lt"/>
+                            <constraint firstItem="Fl7-vL-RvA" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HeA-K0-wrm" secondAttribute="trailing" constant="20" id="iJv-7L-2w0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Fl7-vL-RvA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gED-mf-NSw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="312" y="-157"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plus_icon" width="40" height="40"/>
+    </resources>
+</document>

@@ -12,6 +12,8 @@ class CurrencyCompareViewController: UIViewController {
     
     // MARK: - IBOutlets
     
+    @IBOutlet weak var addPairContainer: UIView!
+    
     // MARK: - Properties
     
     private let viewModel = CurrencyCompareViewModel()
@@ -25,4 +27,5 @@ class CurrencyCompareViewController: UIViewController {
     // MARK: - Methods
     
     // MARK: - IBActions
+    
 }

@@ -24,6 +24,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4z-1y-r1t">
                                         <rect key="frame" x="10" y="40" width="332.5" height="30"/>
                                         <state key="normal" title="Add currency pair"/>
+                                        <connections>
+                                            <segue destination="xWQ-Ks-yh9" kind="presentation" id="1be-g4-cqE"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a currency pair to compare their live rates" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqv-Ic-Pfn">
                                         <rect key="frame" x="20" y="90" width="312.5" height="41"/>
@@ -55,10 +58,21 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Fl7-vL-RvA"/>
                     </view>
+                    <connections>
+                        <outlet property="addPairContainer" destination="HeA-K0-wrm" id="9z9-1C-tAo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gED-mf-NSw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="312" y="-157"/>
+        </scene>
+        <!--Currencies-->
+        <scene sceneID="WpT-1w-weN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Currencies" id="xWQ-Ks-yh9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a6o-FR-SdR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="312" y="256"/>
         </scene>
     </scenes>
     <resources>

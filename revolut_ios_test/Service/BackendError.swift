@@ -11,4 +11,5 @@ import Foundation
 enum BackendError: Error {
     case serializationError
     case invalidURL
+    case fileError
 }

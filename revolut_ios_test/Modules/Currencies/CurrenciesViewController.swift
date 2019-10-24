@@ -67,23 +67,3 @@ extension CurrenciesViewController: UITableViewDelegate, UITableViewDataSource {
         viewModel.didSelectItem(at: indexPath.row)
     }
 }
-
-extension UIView {
-    class var reuseIdentifier: String {
-        return String(describing: self)
-    }
-    
-    class var nibName: String {
-        return String(describing: self)
-    }
-    
-    class var nib: UINib {
-        return UINib(nibName: nibName, bundle: Bundle(for: self))
-    }
-}
-
-extension UITableView {
-    func register<T: UITableViewCell>(class classType: T.Type) {
-        register(classType.nib, forCellReuseIdentifier: T.reuseIdentifier)
-    }
-}

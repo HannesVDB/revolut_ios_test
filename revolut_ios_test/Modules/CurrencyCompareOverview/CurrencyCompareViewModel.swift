@@ -16,11 +16,18 @@ class CurrencyCompareViewModel {
     
     // MARK: - Properties
     
+    var currencyPairs: [CurrencyPair] {
+        return database.currencyPairs ?? []
+    }
+    
+    private let database: Database
+    
     // MARK: - Init
     
-    init() {
-        
+    init(database: Database = Database.shared) {
+        self.database = database
     }
     
     // MARK: - Methods
+    
 }

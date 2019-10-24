@@ -36,12 +36,13 @@ class CurrenciesViewModel {
     
     private var selectedCurrency: Currency?
     private var selectedCompareCurrency: Currency?
+    private let database: Database
     
     // MARK: - Init
     
     
-    init() {
-        
+    init(database: Database = Database.shared) {
+        self.database = database
     }
     
     // MARK: - Methods
@@ -52,8 +53,16 @@ class CurrenciesViewModel {
             self.selectedCurrency = selectedItem
         } else if self.selectedCompareCurrency == nil {
             self.selectedCompareCurrency = selectedItem
+            saveCurrencies()
         }
         continueHandler?()
+    }
+}
+
+private extension CurrenciesViewModel {
+    func saveCurrencies() {
+        let pair = CurrencyPair(currency: selectedCurrency, comparisonCurrency: selectedCompareCurrency)
+        database.persist(pair: pair)
     }
 }
 

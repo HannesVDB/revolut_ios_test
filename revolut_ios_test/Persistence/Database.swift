@@ -11,33 +11,50 @@ import CoreData
 class Database {
     
     static var shared = Database()
-    private let container: NSPersistentContainer
-    
-//
-//    // MARK: - Core Data Saving support
-//
-//    func saveContext () {
-//        let context = persistentContainer.viewContext
-//        if context.hasChanges {
-//            do {
-//                try context.save()
-//            } catch {
-//                // Replace this implementation with code to handle the error appropriately.
-//                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-//                let nserror = error as NSError
-//                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
-//            }
-//        }
-//    }
-    
-    init(container: NSPersistentContainer = NSPersistentContainer(name: "revolut_ios_test")) {
+    internal let container: NSPersistentContainer
+        
+    init(container: NSPersistentContainer = NSPersistentContainer(name: AppConstants.coreDataContainer)) {
         self.container = container
         container.loadPersistentStores { description, error in
             if let error = error {
                 print("Error \(error)")
                 return
             }
-            print(description)
         }
+    }
+    
+    func object<T: NSManagedObject>(for type: T.Type) -> NSManagedObject? {
+        guard let entity = NSEntityDescription.entity(forEntityName: type.name, in: container.viewContext) else { return nil }
+        return NSManagedObject(entity: entity, insertInto: container.viewContext)
+    }
+    
+    func save() {
+        do {
+            try container.viewContext.save()
+        } catch let error as NSError {
+          print("Could not save. \(error), \(error.userInfo)")
+        }
+    }
+    
+    func fetch<T: NSManagedObject>(for type: T.Type) -> [T] {
+        do {
+            let request = fetchRequest(for: type)
+            return try container.viewContext.fetch(request) as! [T]
+        } catch {
+            print("Could not retreive \(error)")
+            return []
+        }
+    }
+}
+
+private extension Database {
+    private func fetchRequest<T: NSManagedObject>(for type: T.Type) -> NSFetchRequest<NSManagedObject> {
+        return NSFetchRequest<NSManagedObject>(entityName: type.name)
+    }
+}
+
+extension NSManagedObject {
+    class var name: String {
+        return String(describing: self)
     }
 }

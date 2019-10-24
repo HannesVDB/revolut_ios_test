@@ -12,4 +12,8 @@ class AppConstants {
     class var baseURL: URL? {
         return URL(string: "https://europe-west1-revolut-230009.cloudfunctions.net/")
     }
+    
+    class var coreDataContainer: String {
+        return "revolut_ios_test"
+    }
 }

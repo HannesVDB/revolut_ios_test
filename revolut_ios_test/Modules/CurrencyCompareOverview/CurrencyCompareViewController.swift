@@ -22,6 +22,7 @@ class CurrencyCompareViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(viewModel.currencyPairs)
     }
     
     // MARK: - Methods

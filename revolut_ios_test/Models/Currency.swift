@@ -9,7 +9,5 @@
 import Foundation
 
 struct Currency: Codable {
-    
     var abbreviation: String?
-    
 }

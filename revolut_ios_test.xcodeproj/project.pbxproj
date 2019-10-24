@@ -14,6 +14,7 @@
 		842CF35D23621D8B0086F63A /* CDCurrencyPair+CurrencyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842CF35C23621D8B0086F63A /* CDCurrencyPair+CurrencyPair.swift */; };
 		842CF3612362201E0086F63A /* UIView+reuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842CF3602362201E0086F63A /* UIView+reuse.swift */; };
 		842CF363236220360086F63A /* UITableView+reuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842CF362236220360086F63A /* UITableView+reuse.swift */; };
+		842CF365236223DE0086F63A /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842CF364236223DE0086F63A /* ActionButton.swift */; };
 		844152692360A1F300E4A7B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844152682360A1F300E4A7B2 /* AppDelegate.swift */; };
 		8441526D2360A1F300E4A7B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441526C2360A1F300E4A7B2 /* ViewController.swift */; };
 		844152702360A1F300E4A7B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8441526E2360A1F300E4A7B2 /* Main.storyboard */; };
@@ -61,6 +62,7 @@
 		842CF35C23621D8B0086F63A /* CDCurrencyPair+CurrencyPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCurrencyPair+CurrencyPair.swift"; sourceTree = "<group>"; };
 		842CF3602362201E0086F63A /* UIView+reuse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+reuse.swift"; sourceTree = "<group>"; };
 		842CF362236220360086F63A /* UITableView+reuse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+reuse.swift"; sourceTree = "<group>"; };
+		842CF364236223DE0086F63A /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
 		844152652360A1F300E4A7B2 /* revolut_ios_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = revolut_ios_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844152682360A1F300E4A7B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8441526C2360A1F300E4A7B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				842CF35F23621DA50086F63A /* Cells */,
+				842CF364236223DE0086F63A /* ActionButton.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				84D9B8762360BAE00012E377 /* CurrencyCompareViewController.swift in Sources */,
 				844152972360A4DB00E4A7B2 /* Service.swift in Sources */,
 				8441529C2360A86500E4A7B2 /* RequestMethod.swift in Sources */,
+				842CF365236223DE0086F63A /* ActionButton.swift in Sources */,
 				842CF35D23621D8B0086F63A /* CDCurrencyPair+CurrencyPair.swift in Sources */,
 				84D9B86C2360B69F0012E377 /* Service+Requests.swift in Sources */,
 				84105B8C2360DE1300897773 /* Database.swift in Sources */,

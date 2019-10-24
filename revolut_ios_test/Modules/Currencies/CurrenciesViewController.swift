@@ -10,6 +10,10 @@ import UIKit
 
 class CurrenciesViewController: UIViewController {
     
+    // MARK: - Handlers
+    
+    var reloadHandler:(() -> Void)?
+    
     // MARK: - IBOutlets
     
     @IBOutlet weak var tableView: UITableView! {
@@ -30,12 +34,16 @@ class CurrenciesViewController: UIViewController {
         super.viewDidLoad()
         viewModel.continueHandler = {
             if self.viewModel.hasCompletedFlow {
+                self.reloadHandler?()
                 self.dismiss(animated: true, completion: nil)
                 return
             }
             let storyboard = UIStoryboard(name: "Currencies", bundle: nil)
             guard let controller = storyboard.instantiateViewController(identifier: "CurrenciesViewController") as? CurrenciesViewController else { return }
             controller.viewModel = self.viewModel
+            controller.reloadHandler = {
+                self.reloadHandler?()
+            }
             self.navigationController?.show(controller, sender: self)
         }
     }

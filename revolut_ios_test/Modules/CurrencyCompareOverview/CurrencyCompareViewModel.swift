@@ -12,12 +12,18 @@ class CurrencyCompareViewModel {
     
     // MARK: - Handlers
     
+    var reloadDataHandler:(() -> Void)?
+    
     // MARK: - Translations
     
     // MARK: - Properties
     
     var currencyPairs: [CurrencyPair] {
         return database.currencyPairs ?? []
+    }
+    
+    var hasData: Bool {
+        return currencyPairs.count != 0
     }
     
     private let database: Database

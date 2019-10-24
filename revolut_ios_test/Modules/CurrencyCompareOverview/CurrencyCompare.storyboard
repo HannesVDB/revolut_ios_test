@@ -48,23 +48,42 @@
                                     <constraint firstAttribute="bottom" secondItem="Kqv-Ic-Pfn" secondAttribute="bottom" constant="20" id="m36-G2-jEj"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYm-V4-eyV" customClass="ActionButton" customModule="revolut_ios_test" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="30"/>
+                                <connections>
+                                    <segue destination="xWQ-Ks-yh9" kind="presentation" id="xi8-Mm-sho"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="73b-IG-iC3">
+                                <rect key="frame" x="0.0" y="74" width="414" height="788"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="HeA-K0-wrm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Fl7-vL-RvA" secondAttribute="leading" constant="20" id="4WT-ID-nTz"/>
+                            <constraint firstItem="73b-IG-iC3" firstAttribute="leading" secondItem="Fl7-vL-RvA" secondAttribute="leading" id="5ns-po-7cA"/>
+                            <constraint firstItem="oYm-V4-eyV" firstAttribute="leading" secondItem="Fl7-vL-RvA" secondAttribute="leading" id="Rk5-G5-Sya"/>
                             <constraint firstItem="HeA-K0-wrm" firstAttribute="centerY" secondItem="y7a-bH-uUo" secondAttribute="centerY" id="Teb-cD-gVS"/>
+                            <constraint firstItem="Fl7-vL-RvA" firstAttribute="trailing" secondItem="oYm-V4-eyV" secondAttribute="trailing" id="Uxj-zr-Y0M"/>
+                            <constraint firstItem="Fl7-vL-RvA" firstAttribute="trailing" secondItem="73b-IG-iC3" secondAttribute="trailing" id="W29-p2-u7d"/>
+                            <constraint firstItem="73b-IG-iC3" firstAttribute="bottom" secondItem="Fl7-vL-RvA" secondAttribute="bottom" id="dAe-bp-EsU"/>
                             <constraint firstItem="HeA-K0-wrm" firstAttribute="centerX" secondItem="y7a-bH-uUo" secondAttribute="centerX" id="htc-ud-3lt"/>
                             <constraint firstItem="Fl7-vL-RvA" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HeA-K0-wrm" secondAttribute="trailing" constant="20" id="iJv-7L-2w0"/>
+                            <constraint firstItem="73b-IG-iC3" firstAttribute="top" secondItem="oYm-V4-eyV" secondAttribute="bottom" id="lhL-hW-vAq"/>
+                            <constraint firstItem="oYm-V4-eyV" firstAttribute="top" secondItem="Fl7-vL-RvA" secondAttribute="top" id="sP1-R7-Val"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Fl7-vL-RvA"/>
                     </view>
                     <connections>
+                        <outlet property="actionButton" destination="oYm-V4-eyV" id="gh4-aZ-EcM"/>
                         <outlet property="addPairContainer" destination="HeA-K0-wrm" id="9z9-1C-tAo"/>
+                        <outlet property="tableView" destination="73b-IG-iC3" id="mGf-BD-bPX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gED-mf-NSw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="312" y="-157"/>
+            <point key="canvasLocation" x="311.59420289855075" y="-157.36607142857142"/>
         </scene>
         <!--Currencies-->
         <scene sceneID="WpT-1w-weN">
@@ -78,4 +97,7 @@
     <resources>
         <image name="plus_icon" width="40" height="40"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="xi8-Mm-sho"/>
+    </inferredMetricsTieBreakers>
 </document>

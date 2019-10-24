@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		84105B892360DABC00897773 /* CurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84105B872360DABC00897773 /* CurrencyCell.swift */; };
 		84105B8A2360DABC00897773 /* CurrencyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84105B882360DABC00897773 /* CurrencyCell.xib */; };
+		84105B8C2360DE1300897773 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84105B8B2360DE1300897773 /* Database.swift */; };
 		844152692360A1F300E4A7B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844152682360A1F300E4A7B2 /* AppDelegate.swift */; };
 		8441526D2360A1F300E4A7B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441526C2360A1F300E4A7B2 /* ViewController.swift */; };
 		844152702360A1F300E4A7B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8441526E2360A1F300E4A7B2 /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 /* Begin PBXFileReference section */
 		84105B872360DABC00897773 /* CurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCell.swift; sourceTree = "<group>"; };
 		84105B882360DABC00897773 /* CurrencyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyCell.xib; sourceTree = "<group>"; };
+		84105B8B2360DE1300897773 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		844152652360A1F300E4A7B2 /* revolut_ios_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = revolut_ios_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844152682360A1F300E4A7B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8441526C2360A1F300E4A7B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				844152712360A1F300E4A7B2 /* revolut_ios_test.xcdatamodeld */,
+				84105B8B2360DE1300897773 /* Database.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				844152972360A4DB00E4A7B2 /* Service.swift in Sources */,
 				8441529C2360A86500E4A7B2 /* RequestMethod.swift in Sources */,
 				84D9B86C2360B69F0012E377 /* Service+Requests.swift in Sources */,
+				84105B8C2360DE1300897773 /* Database.swift in Sources */,
 				844152692360A1F300E4A7B2 /* AppDelegate.swift in Sources */,
 				84D9B8712360B6F70012E377 /* AppConstants.swift in Sources */,
 				84D9B87F2360BCFE0012E377 /* CurrenciesViewController.swift in Sources */,

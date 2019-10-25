@@ -8,7 +8,12 @@
 
 import CoreData
 
-class Database {
+protocol Persistence {
+    var currencyPairs: [CurrencyPair]? { get }
+    func persist(pair: CurrencyPair)
+}
+
+class Database: Persistence {
     
     // MARK: - Properties
     

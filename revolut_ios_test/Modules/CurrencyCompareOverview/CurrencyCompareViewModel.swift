@@ -54,7 +54,9 @@ class CurrencyCompareViewModel {
             case .success(let response):
                 guard let response = response else { return }
                 self.currencyPairs = self.database.currencyPairs?.compactMap { CurrencyRateModel(currencyPair: $0, rate: response[$0.key]) }
-                completion?()
+                DispatchQueue.main.async {
+                    completion?()
+                }
             case .failure(let error):
                 self.errorHandler?(error)
             }
@@ -66,9 +68,7 @@ extension CurrencyCompareViewModel {
     func registerForUpdates() {
         resetTimer()
         self.reloadData {
-            DispatchQueue.main.async {
-                self.startTimer()
-            }
+            self.startTimer()
         }
         registerForBackgroundNotification {
             print("✋ Resetting timer")

@@ -34,14 +34,14 @@ class CurrenciesViewModel {
         return selectedCurrency != nil && selectedCompareCurrency != nil
     }
     
-    private var selectedCurrency: Currency?
-    private var selectedCompareCurrency: Currency?
-    private let database: Database
+    private(set) var selectedCurrency: Currency?
+    private(set) var selectedCompareCurrency: Currency?
+    private let database: Persistence
     
     // MARK: - Init
     
     
-    init(database: Database = Database.shared) {
+    init(database: Persistence = Database.shared) {
         self.database = database
     }
     

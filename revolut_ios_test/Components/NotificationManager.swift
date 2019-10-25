@@ -18,7 +18,7 @@ class NotificationManager: NotificationManaging {
     
     // MARK: - Properties
     
-    private var observers = [AnyObject]()
+    private(set) var observers = [AnyObject]()
     
     // MARK: - Init
     

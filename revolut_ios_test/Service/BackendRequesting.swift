@@ -10,5 +10,5 @@ import Foundation
 
 protocol BackendRequesting {
     /// Fetch the exchange rate for two given currencies
-    func exchangeRate(for currency: Currency, with comparedCurrency: Currency, completion: ((_ response: ApiResponse<[String: Double]>) -> Void)?)
+    func exchangeRate(for pairs: [CurrencyPair], completion: ((_ response: ApiResponse<[String: Double]>) -> Void)?)
 }

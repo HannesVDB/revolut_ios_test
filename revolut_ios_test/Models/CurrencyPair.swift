@@ -12,3 +12,9 @@ struct CurrencyPair {
     var currency: Currency?
     var comparisonCurrency: Currency?
 }
+
+extension CurrencyPair {
+    var key: String {
+        return "\(currency?.abbreviation ?? "")\(comparisonCurrency?.abbreviation ?? "")"
+    }
+}

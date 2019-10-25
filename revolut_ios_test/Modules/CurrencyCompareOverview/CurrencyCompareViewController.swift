@@ -18,6 +18,7 @@ class CurrencyCompareViewController: UIViewController {
         didSet {
             tableView.delegate = self
             tableView.dataSource = self
+            tableView.register(class: CurrencyRateCell.self)
         }
     }
     
@@ -29,7 +30,12 @@ class CurrencyCompareViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        redrawView()
+        viewModel.reloadDataHandler = {
+            DispatchQueue.main.async {
+                self.redrawView()
+            }
+        }
+        viewModel.reloadData()
     }
     
     // MARK: - Methods
@@ -44,7 +50,7 @@ class CurrencyCompareViewController: UIViewController {
         if let navigation = segue.destination as? UINavigationController,
             let controller = navigation.children.first as? CurrenciesViewController {
             controller.reloadHandler = {
-                self.redrawView()
+                self.viewModel.reloadData()
             }
         }
     }
@@ -54,12 +60,14 @@ class CurrencyCompareViewController: UIViewController {
 
 extension CurrencyCompareViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.currencyPairs.count
+        return viewModel.currencyPairs?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = viewModel.currencyPairs[indexPath.row].comparisonCurrency?.abbreviation
-        return cell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: CurrencyRateCell.reuseIdentifier) as? CurrencyRateCell {
+            cell.model = viewModel.currencyPairs?[indexPath.row]
+            return cell
+        }
+        return UITableViewCell()
     }
 }

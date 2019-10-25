@@ -13,14 +13,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        Service.shared.exchangeRate(for: Currency(abbreviation: "EUR"), with: Currency(abbreviation: "USD")) { reponse in
-            switch reponse {
-            case .success(let response):
-                print("Success \(response)")
-            case .failure(let error):
-                print(error)
-            }
-        }
+//        Service.shared.exchangeRate(for: Currency(abbreviation: "EUR"), with: Currency(abbreviation: "USD")) { reponse in
+//            switch reponse {
+//            case .success(let response):
+//                print("Success \(response)")
+//            case .failure(let error):
+//                print(error)
+//            }
+//        }
     }
 
 

@@ -9,8 +9,8 @@
 import Foundation
 
 extension Service: BackendRequesting {
-    func exchangeRate(for currency: Currency, with comparedCurrency: Currency, completion: ((_ response: ApiResponse<[String: Double]>) -> Void)?) {
-        let request = ExchangeRateRequest(currency: currency, comparedCurrency: comparedCurrency)
+    func exchangeRate(for pairs: [CurrencyPair], completion: ((_ response: ApiResponse<[String: Double]>) -> Void)?) {
+        let request = ExchangeRateRequest(pairs: pairs)
         do {
             let urlRequest = try request.makeURLRequest(with: AppConstants.baseURL)
             let serializer = JSONSerializer<[String: Double]>()

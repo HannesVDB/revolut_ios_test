@@ -9,24 +9,22 @@
 import Foundation
 
 struct ExchangeRateRequest: Request {
-    
-    let currency: Currency
-    let comparedCurrency: Currency
+    let pairs: [CurrencyPair]
     
     var url: URL? {
-        return URL(string: "https://europe-west1-revolut-230009.cloudfunctions.net/revolut-ios")
+        var url = "https://europe-west1-revolut-230009.cloudfunctions.net/revolut-ios?"
+        let items = pairs.compactMap { "pairs=\($0.key)"}
+        items.enumerated().forEach { item in
+            var component = item.element
+            if item.offset != items.count - 1 {
+                component.append("&")
+            }
+            url.append(component)
+        }
+        return URL(string: url)
     }
     
     var method: RequestMethod {
         return .get
-    }
-    
-    var query: [String : String]? {
-        guard let currencyAbr = currency.abbreviation, let comparedAbr = comparedCurrency.abbreviation else {
-            return nil
-        }
-        return [
-            "pairs": "\(currencyAbr)\(comparedAbr)"
-        ]
     }
 }

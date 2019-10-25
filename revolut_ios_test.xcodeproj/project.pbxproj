@@ -17,9 +17,8 @@
 		842CF365236223DE0086F63A /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842CF364236223DE0086F63A /* ActionButton.swift */; };
 		842CF36823622D480086F63A /* CurrencyRateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842CF36623622D480086F63A /* CurrencyRateCell.swift */; };
 		842CF36923622D480086F63A /* CurrencyRateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842CF36723622D480086F63A /* CurrencyRateCell.xib */; };
+		842CF36B2362D3AD0086F63A /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842CF36A2362D3AD0086F63A /* NotificationManager.swift */; };
 		844152692360A1F300E4A7B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844152682360A1F300E4A7B2 /* AppDelegate.swift */; };
-		8441526D2360A1F300E4A7B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441526C2360A1F300E4A7B2 /* ViewController.swift */; };
-		844152702360A1F300E4A7B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8441526E2360A1F300E4A7B2 /* Main.storyboard */; };
 		844152732360A1F300E4A7B2 /* revolut_ios_test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 844152712360A1F300E4A7B2 /* revolut_ios_test.xcdatamodeld */; };
 		844152752360A1F500E4A7B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844152742360A1F500E4A7B2 /* Assets.xcassets */; };
 		844152782360A1F500E4A7B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844152762360A1F500E4A7B2 /* LaunchScreen.storyboard */; };
@@ -67,10 +66,9 @@
 		842CF364236223DE0086F63A /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
 		842CF36623622D480086F63A /* CurrencyRateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRateCell.swift; sourceTree = "<group>"; };
 		842CF36723622D480086F63A /* CurrencyRateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyRateCell.xib; sourceTree = "<group>"; };
+		842CF36A2362D3AD0086F63A /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		844152652360A1F300E4A7B2 /* revolut_ios_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = revolut_ios_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844152682360A1F300E4A7B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8441526C2360A1F300E4A7B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8441526F2360A1F300E4A7B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		844152722360A1F300E4A7B2 /* revolut_ios_test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = revolut_ios_test.xcdatamodel; sourceTree = "<group>"; };
 		844152742360A1F500E4A7B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		844152772360A1F500E4A7B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -184,8 +182,6 @@
 			children = (
 				84D9B87B2360BCE70012E377 /* Currencies */,
 				84D9B8742360BAAE0012E377 /* CurrencyCompareOverview */,
-				8441526C2360A1F300E4A7B2 /* ViewController.swift */,
-				8441526E2360A1F300E4A7B2 /* Main.storyboard */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -250,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				84D9B8702360B6F70012E377 /* AppConstants.swift */,
+				842CF36A2362D3AD0086F63A /* NotificationManager.swift */,
 				842CF362236220360086F63A /* UITableView+reuse.swift */,
 				842CF3602362201E0086F63A /* UIView+reuse.swift */,
 				842CF35E23621D9E0086F63A /* Custom Views */,
@@ -364,7 +361,6 @@
 				84D9B87D2360BCF30012E377 /* Currencies.storyboard in Resources */,
 				842CF36923622D480086F63A /* CurrencyRateCell.xib in Resources */,
 				844152932360A42A00E4A7B2 /* currencies.json in Resources */,
-				844152702360A1F300E4A7B2 /* Main.storyboard in Resources */,
 				84105B8A2360DABC00897773 /* CurrencyCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,7 +386,6 @@
 				842CF36823622D480086F63A /* CurrencyRateCell.swift in Sources */,
 				8441529E2360A87D00E4A7B2 /* Request.swift in Sources */,
 				84F9147C236211E00038542C /* Database+Currency.swift in Sources */,
-				8441526D2360A1F300E4A7B2 /* ViewController.swift in Sources */,
 				84D9B8812360BD060012E377 /* CurrenciesViewModel.swift in Sources */,
 				842CF363236220360086F63A /* UITableView+reuse.swift in Sources */,
 				842CF3612362201E0086F63A /* UIView+reuse.swift in Sources */,
@@ -402,6 +397,7 @@
 				842CF35D23621D8B0086F63A /* CDCurrencyPair+CurrencyPair.swift in Sources */,
 				84D9B86C2360B69F0012E377 /* Service+Requests.swift in Sources */,
 				84105B8C2360DE1300897773 /* Database.swift in Sources */,
+				842CF36B2362D3AD0086F63A /* NotificationManager.swift in Sources */,
 				844152692360A1F300E4A7B2 /* AppDelegate.swift in Sources */,
 				84D9B8712360B6F70012E377 /* AppConstants.swift in Sources */,
 				84D9B87F2360BCFE0012E377 /* CurrenciesViewController.swift in Sources */,
@@ -433,14 +429,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8441526E2360A1F300E4A7B2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8441526F2360A1F300E4A7B2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		844152762360A1F500E4A7B2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

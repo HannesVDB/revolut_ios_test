@@ -35,7 +35,7 @@ class CurrencyCompareViewController: UIViewController {
                 self.redrawView()
             }
         }
-        viewModel.reloadData()
+        viewModel.registerForUpdates()
     }
     
     // MARK: - Methods
@@ -49,8 +49,11 @@ class CurrencyCompareViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let navigation = segue.destination as? UINavigationController,
             let controller = navigation.children.first as? CurrenciesViewController {
+            viewModel.unregisterForUpdates()
             controller.reloadHandler = {
-                self.viewModel.reloadData()
+                self.viewModel.reloadData {
+                    self.viewModel.registerForUpdates()
+                }
             }
         }
     }

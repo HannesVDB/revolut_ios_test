@@ -8,18 +8,7 @@
 
 import Foundation
 
-enum DummyFileType {
-    case currencies
-    
-    var filename: String {
-        switch self {
-        case .currencies: return "currencies"
-        }
-    }
-}
-
 class JSONSerializer<T: Codable> {
-    /// Serialize given data to a codable object
     func object<T: Codable>(data: Data, with decoder: JSONDecoder? = JSONDecoder()) throws -> T? {
         do {
             let item = try decoder?.decode(T.self, from: data)

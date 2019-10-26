@@ -22,6 +22,10 @@
 		8437A6392364D2E0007AEF54 /* ExchangeRateRequestSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437A6382364D2E0007AEF54 /* ExchangeRateRequestSpec.swift */; };
 		8437A63B2364D83D007AEF54 /* Request+MethodsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437A63A2364D83C007AEF54 /* Request+MethodsSpec.swift */; };
 		8437A64B2364DEF8007AEF54 /* CurrencyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437A64A2364DEF8007AEF54 /* CurrencyLabel.swift */; };
+		8437A64D2364EBFE007AEF54 /* CurrencyRateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437A64C2364EBFE007AEF54 /* CurrencyRateModel.swift */; };
+		8437A64F2364EC12007AEF54 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437A64E2364EC12007AEF54 /* RoundedImageView.swift */; };
+		8437A6512364EC3E007AEF54 /* CurrencyCellItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437A6502364EC3E007AEF54 /* CurrencyCellItem.swift */; };
+		8437A6532364EC68007AEF54 /* DummyFileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437A6522364EC68007AEF54 /* DummyFileType.swift */; };
 		844152692360A1F300E4A7B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844152682360A1F300E4A7B2 /* AppDelegate.swift */; };
 		844152732360A1F300E4A7B2 /* revolut_ios_test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 844152712360A1F300E4A7B2 /* revolut_ios_test.xcdatamodeld */; };
 		844152752360A1F500E4A7B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844152742360A1F500E4A7B2 /* Assets.xcassets */; };
@@ -88,6 +92,10 @@
 		8437A6382364D2E0007AEF54 /* ExchangeRateRequestSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateRequestSpec.swift; sourceTree = "<group>"; };
 		8437A63A2364D83C007AEF54 /* Request+MethodsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Request+MethodsSpec.swift"; sourceTree = "<group>"; };
 		8437A64A2364DEF8007AEF54 /* CurrencyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyLabel.swift; sourceTree = "<group>"; };
+		8437A64C2364EBFE007AEF54 /* CurrencyRateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRateModel.swift; sourceTree = "<group>"; };
+		8437A64E2364EC12007AEF54 /* RoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
+		8437A6502364EC3E007AEF54 /* CurrencyCellItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCellItem.swift; sourceTree = "<group>"; };
+		8437A6522364EC68007AEF54 /* DummyFileType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyFileType.swift; sourceTree = "<group>"; };
 		844152652360A1F300E4A7B2 /* revolut_ios_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = revolut_ios_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844152682360A1F300E4A7B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		844152722360A1F300E4A7B2 /* revolut_ios_test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = revolut_ios_test.xcdatamodel; sourceTree = "<group>"; };
@@ -153,9 +161,10 @@
 		842CF35E23621D9E0086F63A /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
-				842CF35F23621DA50086F63A /* Cells */,
 				842CF364236223DE0086F63A /* ActionButton.swift */,
 				8437A64A2364DEF8007AEF54 /* CurrencyLabel.swift */,
+				8437A64E2364EC12007AEF54 /* RoundedImageView.swift */,
+				842CF35F23621DA50086F63A /* Cells */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -255,7 +264,10 @@
 			isa = PBXGroup;
 			children = (
 				844152942360A48000E4A7B2 /* Currency.swift */,
+				8437A6502364EC3E007AEF54 /* CurrencyCellItem.swift */,
 				8418F2152362176D00FC4AFF /* CurrencyPair.swift */,
+				8437A64C2364EBFE007AEF54 /* CurrencyRateModel.swift */,
+				8437A6522364EC68007AEF54 /* DummyFileType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -503,6 +515,7 @@
 				842CF36823622D480086F63A /* CurrencyRateCell.swift in Sources */,
 				8441529E2360A87D00E4A7B2 /* Request.swift in Sources */,
 				84F9147C236211E00038542C /* Database+Currency.swift in Sources */,
+				8437A64D2364EBFE007AEF54 /* CurrencyRateModel.swift in Sources */,
 				84D9B8812360BD060012E377 /* CurrenciesViewModel.swift in Sources */,
 				842CF363236220360086F63A /* UITableView+reuse.swift in Sources */,
 				842CF3612362201E0086F63A /* UIView+reuse.swift in Sources */,
@@ -519,9 +532,12 @@
 				84D9B8712360B6F70012E377 /* AppConstants.swift in Sources */,
 				84D9B87F2360BCFE0012E377 /* CurrenciesViewController.swift in Sources */,
 				84D9B8732360B7EE0012E377 /* BackendError.swift in Sources */,
+				8437A6532364EC68007AEF54 /* DummyFileType.swift in Sources */,
 				84D9B86E2360B6CE0012E377 /* BackendRequesting.swift in Sources */,
 				84105B892360DABC00897773 /* CurrencyCell.swift in Sources */,
+				8437A64F2364EC12007AEF54 /* RoundedImageView.swift in Sources */,
 				8418F2162362176D00FC4AFF /* CurrencyPair.swift in Sources */,
+				8437A6512364EC3E007AEF54 /* CurrencyCellItem.swift in Sources */,
 				844152732360A1F300E4A7B2 /* revolut_ios_test.xcdatamodeld in Sources */,
 				84D9B8782360BB130012E377 /* CurrencyCompareViewModel.swift in Sources */,
 			);

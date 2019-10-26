@@ -57,7 +57,6 @@ class CurrencyCompareViewModel {
     func reloadData(completion:(() -> Void)? = nil) {
         let currencyPairs = database.currencyPairs ?? []
         service.exchangeRate(for: currencyPairs) { reponse in
-            print("😍 Called")
             switch reponse {
             case .success(let response):
                 guard let response = response else { return }
@@ -84,11 +83,9 @@ extension CurrencyCompareViewModel {
             self.startTimer()
         }
         registerForBackgroundNotification {
-            print("✋ Resetting timer")
             self.resetTimer()
         }
         registerForForegroundNotification {
-            print("🤘 Restarting timer")
             self.startTimer()
         }
     }
@@ -122,9 +119,4 @@ extension CurrencyCompareViewModel {
             handler()
         }
     }
-}
-
-struct CurrencyRateModel {
-    var currencyPair: CurrencyPair
-    var rate: Double?
 }

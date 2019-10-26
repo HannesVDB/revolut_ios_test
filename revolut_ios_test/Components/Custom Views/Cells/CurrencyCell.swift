@@ -8,22 +8,6 @@
 
 import UIKit
 
-class RoundedImageView: UIImageView {
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
-    
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-    }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        layer.cornerRadius = frame.height / 2
-    }
-}
-
 class CurrencyCell: UITableViewCell {
     
     // MARK: - IBOutlets

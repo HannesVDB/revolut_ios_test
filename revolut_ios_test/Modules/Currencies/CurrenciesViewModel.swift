@@ -65,9 +65,3 @@ private extension CurrenciesViewModel {
         database.persist(pair: pair)
     }
 }
-
-struct CurrencyCellItem {
-    var currency: Currency?
-    var isSelected: Bool
-    var image: UIImage?
-}

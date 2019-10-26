@@ -25,6 +25,7 @@ class JSONSerializer<T: Codable> {
             let item = try decoder?.decode(T.self, from: data)
             return item
         } catch {
+            print(error)
             throw BackendError.serializationError
         }
     }

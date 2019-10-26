@@ -20,6 +20,7 @@
 		842CF36B2362D3AD0086F63A /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842CF36A2362D3AD0086F63A /* NotificationManager.swift */; };
 		8437A6372364CDCF007AEF54 /* Service+RequestsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437A6362364CDCF007AEF54 /* Service+RequestsSpec.swift */; };
 		8437A6392364D2E0007AEF54 /* ExchangeRateRequestSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437A6382364D2E0007AEF54 /* ExchangeRateRequestSpec.swift */; };
+		8437A63B2364D83D007AEF54 /* Request+MethodsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437A63A2364D83C007AEF54 /* Request+MethodsSpec.swift */; };
 		844152692360A1F300E4A7B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844152682360A1F300E4A7B2 /* AppDelegate.swift */; };
 		844152732360A1F300E4A7B2 /* revolut_ios_test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 844152712360A1F300E4A7B2 /* revolut_ios_test.xcdatamodeld */; };
 		844152752360A1F500E4A7B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844152742360A1F500E4A7B2 /* Assets.xcassets */; };
@@ -84,6 +85,7 @@
 		842CF36A2362D3AD0086F63A /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		8437A6362364CDCF007AEF54 /* Service+RequestsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Service+RequestsSpec.swift"; sourceTree = "<group>"; };
 		8437A6382364D2E0007AEF54 /* ExchangeRateRequestSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateRequestSpec.swift; sourceTree = "<group>"; };
+		8437A63A2364D83C007AEF54 /* Request+MethodsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Request+MethodsSpec.swift"; sourceTree = "<group>"; };
 		844152652360A1F300E4A7B2 /* revolut_ios_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = revolut_ios_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844152682360A1F300E4A7B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		844152722360A1F300E4A7B2 /* revolut_ios_test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = revolut_ios_test.xcdatamodel; sourceTree = "<group>"; };
@@ -287,11 +289,12 @@
 		8488E3C32364806400374CEE /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				8488E3C62364809A00374CEE /* JSONSerializerSpec.swift */,
-				8488E3C82364843900374CEE /* RequestMethodSpec.swift */,
-				8488E3CA236484FB00374CEE /* ServiceSpec.swift */,
-				8437A6362364CDCF007AEF54 /* Service+RequestsSpec.swift */,
 				8437A6382364D2E0007AEF54 /* ExchangeRateRequestSpec.swift */,
+				8488E3C62364809A00374CEE /* JSONSerializerSpec.swift */,
+				8437A63A2364D83C007AEF54 /* Request+MethodsSpec.swift */,
+				8488E3C82364843900374CEE /* RequestMethodSpec.swift */,
+				8437A6362364CDCF007AEF54 /* Service+RequestsSpec.swift */,
+				8488E3CA236484FB00374CEE /* ServiceSpec.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -531,6 +534,7 @@
 				84B7DBFA236344CA000B6702 /* NotificationManagerSpec.swift in Sources */,
 				8488E3C2236358A600374CEE /* CurrencyCompareViewModelSpec.swift in Sources */,
 				8488E3C72364809A00374CEE /* JSONSerializerSpec.swift in Sources */,
+				8437A63B2364D83D007AEF54 /* Request+MethodsSpec.swift in Sources */,
 				84B7DC06236348E4000B6702 /* CurrencyCellSpec.swift in Sources */,
 				84B7DC0923634DFC000B6702 /* CurrencySpec.swift in Sources */,
 				84B7DBF8236343F0000B6702 /* AppConstantsSpect.swift in Sources */,

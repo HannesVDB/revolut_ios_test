@@ -26,5 +26,8 @@ class ExchangeRateRequestSpec: XCTestCase {
     func testURLShouldBeCorrectWithQueryParams() {
         XCTAssertEqual(sut.url?.absoluteString, "https://europe-west1-revolut-230009.cloudfunctions.net/revolut-ios?pairs=EURUSD")
     }
-
+    
+    func testRequestShouldHaveNoQuery() {
+        XCTAssertNil(sut.query)
+    }
 }

@@ -9,9 +9,10 @@
 import Foundation
 
 struct CurrencyPair {
+    var id: String = UUID().uuidString
     var currency: Currency?
     var comparisonCurrency: Currency?
-    var dateAdded: Date?
+    var dateAdded: Date = Date()
 }
 
 extension CurrencyPair {

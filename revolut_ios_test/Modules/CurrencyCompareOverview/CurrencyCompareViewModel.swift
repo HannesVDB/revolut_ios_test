@@ -70,6 +70,11 @@ class CurrencyCompareViewModel {
             }
         }
     }
+    
+    func delete(at row: Int) {
+        guard let pair = currencyPairs?[row].currencyPair else { return }
+        database.deleteCurrencyPair(pair)
+    }
 }
 
 extension CurrencyCompareViewModel {

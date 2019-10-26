@@ -13,7 +13,8 @@ extension CDCurrencyPair {
         var pair = CurrencyPair()
         pair.currency = Currency(abbreviation: self.currencyAbbreviation)
         pair.comparisonCurrency = Currency(abbreviation: self.compareCurrencyAbbreviation)
-        pair.dateAdded = self.dateAdded
+        pair.dateAdded = self.dateAdded ?? Date()
+        pair.id = self.id ?? ""
         return pair
     }
 }

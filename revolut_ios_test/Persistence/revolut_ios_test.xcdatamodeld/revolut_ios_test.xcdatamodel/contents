@@ -3,9 +3,10 @@
     <entity name="CDCurrencyPair" representedClassName="CDCurrencyPair" syncable="YES" codeGenerationType="class">
         <attribute name="compareCurrencyAbbreviation" optional="YES" attributeType="String"/>
         <attribute name="currencyAbbreviation" optional="YES" attributeType="String"/>
-        <attribute name="dateAdded" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dateAdded" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="String"/>
     </entity>
     <elements>
-        <element name="CDCurrencyPair" positionX="-54" positionY="0" width="128" height="88"/>
+        <element name="CDCurrencyPair" positionX="-54" positionY="0" width="128" height="103"/>
     </elements>
 </model>

@@ -11,6 +11,7 @@ import CoreData
 protocol Persistence {
     var currencyPairs: [CurrencyPair]? { get }
     func persist(pair: CurrencyPair)
+    func deleteCurrencyPair(_ pair: CurrencyPair)
 }
 
 class Database: Persistence {
@@ -59,6 +60,21 @@ class Database: Persistence {
             print("Could not retreive \(error)")
             return []
         }
+    }
+    
+    func fetch<T: NSManagedObject>(for type: T.Type, with primaryKey: String) -> T? {
+        do {
+            let request = fetchRequest(for: type)
+            request.predicate = NSPredicate(format: "id = %@", primaryKey)
+            return try container.viewContext.fetch(request).first as? T
+        } catch {
+            print("Could not retreive \(error)")
+            return nil
+        }
+    }
+    
+    func delete<T: NSManagedObject>(value: T) {
+        container.viewContext.delete(value)
     }
 }
 

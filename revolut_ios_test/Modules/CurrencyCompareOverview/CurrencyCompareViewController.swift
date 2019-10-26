@@ -44,6 +44,7 @@ class CurrencyCompareViewController: UIViewController {
         tableView.isHidden = !viewModel.hasData
         actionButton.isHidden = !viewModel.hasData
         tableView.reloadData()
+        actionButton.title = viewModel.addCurrencyTitle
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

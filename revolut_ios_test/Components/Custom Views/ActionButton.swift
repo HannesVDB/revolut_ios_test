@@ -24,7 +24,6 @@ class ActionButton: UIButton {
     
     private lazy var descriptionLabel: UILabel = {
         let label = UILabel()
-        label.text = "Something"
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .left
         label.textColor = UIColor(named: "action_blue_color")

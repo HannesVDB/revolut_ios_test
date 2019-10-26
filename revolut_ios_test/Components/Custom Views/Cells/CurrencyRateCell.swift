@@ -14,7 +14,7 @@ class CurrencyRateCell: UITableViewCell {
     @IBOutlet weak var currencyAmountLabel: UILabel!
     @IBOutlet weak var currencyNameLabel: UILabel!
     
-    @IBOutlet weak var compareCurrencyAmountLabel: UILabel!
+    @IBOutlet weak var compareCurrencyAmountLabel: CurrencyLabel!
     @IBOutlet weak var compareCurrencyNameLabel: UILabel!
     
     // MARK: - Properties
@@ -25,7 +25,7 @@ class CurrencyRateCell: UITableViewCell {
                 currencyAmountLabel.text = "1 \(currency.abbreviation ?? "")"
                 currencyNameLabel.text = currency.abbreviation
                 compareCurrencyNameLabel.text = comparedCurrency.abbreviation
-                compareCurrencyAmountLabel.text = "\(model?.rate ?? 0)"
+                compareCurrencyAmountLabel.set(value: model?.rate ?? 0)
             }
         }
     }

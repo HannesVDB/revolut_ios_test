@@ -10,6 +10,10 @@ import UIKit
 
 class CurrencyCompareViewModel {
     
+    // MARK: - Translations
+    
+    let addCurrencyTitle = "Add currency"
+    
     // MARK: - Handlers
     
     var reloadDataHandler:(() -> Void)?

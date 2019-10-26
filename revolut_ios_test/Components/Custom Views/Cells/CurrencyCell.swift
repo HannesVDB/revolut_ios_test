@@ -30,7 +30,6 @@ class CurrencyCell: UITableViewCell {
     
     @IBOutlet weak var currencyImageView: RoundedImageView!
     @IBOutlet weak var currencyAbbreviationLabel: UILabel!
-    @IBOutlet weak var currencyNameLabel: UILabel!
     
     // MARK: - Properties
     
@@ -39,6 +38,7 @@ class CurrencyCell: UITableViewCell {
             currencyAbbreviationLabel.text = item?.currency?.abbreviation
             contentView.alpha = item?.isSelected == true ? 0.4 : 1.0
             isUserInteractionEnabled = item?.isSelected != true
+            currencyImageView.image = item?.image
         }
     }
 }

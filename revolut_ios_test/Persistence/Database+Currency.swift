@@ -16,11 +16,12 @@ extension Database {
         }
         object.setValue(pair.currency?.abbreviation, forKey: "currencyAbbreviation")
         object.setValue(pair.comparisonCurrency?.abbreviation, forKey: "compareCurrencyAbbreviation")
+        object.setValue(Date(), forKey: "dateAdded")
         save()
     }
     
     var currencyPairs: [CurrencyPair]? {
         let items = fetch(for: CDCurrencyPair.self)
-        return items.compactMap { $0.model }
+        return items.sorted(by: { $0.dateAdded! > $1.dateAdded! }).compactMap { $0.model }
     }
 }

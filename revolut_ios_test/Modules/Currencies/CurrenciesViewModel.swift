@@ -6,7 +6,7 @@
 //  Copyright © 2019 HannesVDB. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class CurrenciesViewModel {
     
@@ -24,7 +24,7 @@ class CurrenciesViewModel {
             return items.compactMap {
                 let currency = Currency(abbreviation: $0)
                 let isSelected = selectedCurrency?.abbreviation == $0
-                return CurrencyCellItem(currency: currency, isSelected: isSelected)
+                return CurrencyCellItem(currency: currency, isSelected: isSelected, image: UIImage(named: $0))
             }
         }
         return []
@@ -69,4 +69,5 @@ private extension CurrenciesViewModel {
 struct CurrencyCellItem {
     var currency: Currency?
     var isSelected: Bool
+    var image: UIImage?
 }

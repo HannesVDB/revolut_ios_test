@@ -11,6 +11,7 @@ import Foundation
 struct CurrencyPair {
     var currency: Currency?
     var comparisonCurrency: Currency?
+    var dateAdded: Date?
 }
 
 extension CurrencyPair {

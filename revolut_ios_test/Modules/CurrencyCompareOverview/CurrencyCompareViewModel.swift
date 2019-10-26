@@ -32,23 +32,27 @@ class CurrencyCompareViewModel {
         return pairs.count != 0
     }
     
-    private let database: Database
+    private let database: Persistence
     private let notificationManager: NotificationManaging
+    private let service: BackendRequesting
+    
     private(set) var timer: Timer?
 
     // MARK: - Init
     
-    init(database: Database = Database.shared,
-         notificationManager: NotificationManaging = NotificationManager()) {
+    init(database: Persistence = Database.shared,
+         notificationManager: NotificationManaging = NotificationManager(),
+         service: BackendRequesting = Service.shared) {
         self.database = database
         self.notificationManager = notificationManager
+        self.service = service
     }
     
     // MARK: - Methods
     
     func reloadData(completion:(() -> Void)? = nil) {
         let currencyPairs = database.currencyPairs ?? []
-        Service.shared.exchangeRate(for: currencyPairs) { reponse in
+        service.exchangeRate(for: currencyPairs) { reponse in
             print("😍 Called")
             switch reponse {
             case .success(let response):

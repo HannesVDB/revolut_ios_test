@@ -28,6 +28,10 @@
 		8441529A2360A70B00E4A7B2 /* ExchangeRateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844152992360A70B00E4A7B2 /* ExchangeRateRequest.swift */; };
 		8441529C2360A86500E4A7B2 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441529B2360A86500E4A7B2 /* RequestMethod.swift */; };
 		8441529E2360A87D00E4A7B2 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441529D2360A87D00E4A7B2 /* Request.swift */; };
+		8488E3C2236358A600374CEE /* CurrencyCompareViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488E3C1236358A600374CEE /* CurrencyCompareViewModelSpec.swift */; };
+		8488E3C72364809A00374CEE /* JSONSerializerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488E3C62364809A00374CEE /* JSONSerializerSpec.swift */; };
+		8488E3C92364843900374CEE /* RequestMethodSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488E3C82364843900374CEE /* RequestMethodSpec.swift */; };
+		8488E3CB236484FB00374CEE /* ServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488E3CA236484FB00374CEE /* ServiceSpec.swift */; };
 		84B7DBF8236343F0000B6702 /* AppConstantsSpect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7DBF7236343F0000B6702 /* AppConstantsSpect.swift */; };
 		84B7DBFA236344CA000B6702 /* NotificationManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7DBF9236344CA000B6702 /* NotificationManagerSpec.swift */; };
 		84B7DBFC23634708000B6702 /* UIView+ReuseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7DBFB23634708000B6702 /* UIView+ReuseSpec.swift */; };
@@ -90,6 +94,10 @@
 		844152992360A70B00E4A7B2 /* ExchangeRateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateRequest.swift; sourceTree = "<group>"; };
 		8441529B2360A86500E4A7B2 /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
 		8441529D2360A87D00E4A7B2 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		8488E3C1236358A600374CEE /* CurrencyCompareViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCompareViewModelSpec.swift; sourceTree = "<group>"; };
+		8488E3C62364809A00374CEE /* JSONSerializerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSerializerSpec.swift; sourceTree = "<group>"; };
+		8488E3C82364843900374CEE /* RequestMethodSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethodSpec.swift; sourceTree = "<group>"; };
+		8488E3CA236484FB00374CEE /* ServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceSpec.swift; sourceTree = "<group>"; };
 		84B7DBF7236343F0000B6702 /* AppConstantsSpect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstantsSpect.swift; sourceTree = "<group>"; };
 		84B7DBF9236344CA000B6702 /* NotificationManagerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManagerSpec.swift; sourceTree = "<group>"; };
 		84B7DBFB23634708000B6702 /* UIView+ReuseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ReuseSpec.swift"; sourceTree = "<group>"; };
@@ -194,6 +202,7 @@
 				84B7DBFD236347C4000B6702 /* Mocks */,
 				84B7DC0723634DEC000B6702 /* Models */,
 				84B7DC0C23635004000B6702 /* Modules */,
+				8488E3C32364806400374CEE /* Service */,
 			);
 			path = revolut_ios_testTests;
 			sourceTree = "<group>";
@@ -263,6 +272,24 @@
 			path = Request;
 			sourceTree = "<group>";
 		};
+		8488E3C02363589600374CEE /* CurrenciesCompareOverview */ = {
+			isa = PBXGroup;
+			children = (
+				8488E3C1236358A600374CEE /* CurrencyCompareViewModelSpec.swift */,
+			);
+			path = CurrenciesCompareOverview;
+			sourceTree = "<group>";
+		};
+		8488E3C32364806400374CEE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8488E3C62364809A00374CEE /* JSONSerializerSpec.swift */,
+				8488E3C82364843900374CEE /* RequestMethodSpec.swift */,
+				8488E3CA236484FB00374CEE /* ServiceSpec.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		84B7DBF6236343BF000B6702 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,6 +331,7 @@
 		84B7DC0C23635004000B6702 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				8488E3C02363589600374CEE /* CurrenciesCompareOverview */,
 				84B7DC0D2363501E000B6702 /* Currencies */,
 			);
 			path = Modules;
@@ -490,15 +518,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8488E3CB236484FB00374CEE /* ServiceSpec.swift in Sources */,
 				84B7DC0B23634F10000B6702 /* CurrencyPairSpec.swift in Sources */,
 				84B7DBFC23634708000B6702 /* UIView+ReuseSpec.swift in Sources */,
 				84B7DC0F23635036000B6702 /* CurrenciesViewModelSpec.swift in Sources */,
 				84B7DBFA236344CA000B6702 /* NotificationManagerSpec.swift in Sources */,
+				8488E3C2236358A600374CEE /* CurrencyCompareViewModelSpec.swift in Sources */,
+				8488E3C72364809A00374CEE /* JSONSerializerSpec.swift in Sources */,
 				84B7DC06236348E4000B6702 /* CurrencyCellSpec.swift in Sources */,
 				84B7DC0923634DFC000B6702 /* CurrencySpec.swift in Sources */,
 				84B7DBF8236343F0000B6702 /* AppConstantsSpect.swift in Sources */,
 				84B7DC1123635171000B6702 /* MockPersistence.swift in Sources */,
 				84B7DC00236347DC000B6702 /* MockCell.swift in Sources */,
+				8488E3C92364843900374CEE /* RequestMethodSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

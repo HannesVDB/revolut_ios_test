@@ -12,7 +12,7 @@ import XCTest
 class CurrenciesViewModelSpec: XCTestCase {
 
     var sut: CurrenciesViewModel!
-    var database: MockCurrenciesPersistence!
+    fileprivate var database: MockCurrenciesPersistence!
     
     override func setUp() {
         database = MockCurrenciesPersistence()
@@ -53,7 +53,7 @@ class CurrenciesViewModelSpec: XCTestCase {
     }
 }
 
-internal class MockCurrenciesPersistence: MockPersistence {
+fileprivate class MockCurrenciesPersistence: MockPersistence {
     
     var persistCalled = false
     

@@ -30,4 +30,9 @@ class CurrencyPairSpec: XCTestCase {
     func testPairShouldHaveTheCorrectKey() {
         XCTAssertEqual(sut.key, "EURUSD")
     }
+    
+    func testKeyShouldBeEmptyWhenEmptyCurrencies() {
+        sut = CurrencyPair(currency: nil, comparisonCurrency: nil)
+        XCTAssertTrue(sut.key.isEmpty)
+    }
 }

@@ -12,15 +12,14 @@ final class Service {
     
     /// Shared as a Singleton to request data from the backend
     static let shared = Service()
-        
-    private init() {
+    let session: URLSession
 
+    init(session: URLSession = URLSession(configuration: URLSessionConfiguration.default)) {
+        self.session = session
     }
         
     @discardableResult
     func execute<T: Codable>(_ urlRequest: URLRequest, with serializer: JSONSerializer<T>, completion: @escaping (_ response: ApiResponse<T>) -> Void) -> URLSessionDataTask {
-        // Prepare the session.
-        let session = URLSession(configuration: URLSessionConfiguration.default, delegate: nil, delegateQueue: nil)
         // Execute the task.
         let task = session.dataTask(with: urlRequest) { data, urlResponse, error in
             if let error = error {

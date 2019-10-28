@@ -26,7 +26,7 @@ class CurrenciesViewController: UIViewController {
     
     // MARK: - Properties
     
-    private var viewModel = CurrenciesViewModel()
+    var viewModel = CurrenciesViewModel()
     
     // MARK: - Lifecycle
     

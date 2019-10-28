@@ -54,6 +54,7 @@
 		84B7DC0B23634F10000B6702 /* CurrencyPairSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7DC0A23634F10000B6702 /* CurrencyPairSpec.swift */; };
 		84B7DC0F23635036000B6702 /* CurrenciesViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7DC0E23635036000B6702 /* CurrenciesViewModelSpec.swift */; };
 		84B7DC1123635171000B6702 /* MockPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7DC1023635171000B6702 /* MockPersistence.swift */; };
+		84C0876623677EB00068A851 /* CurrenciesViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C0876523677EB00068A851 /* CurrenciesViewControllerSpec.swift */; };
 		84D9B8662360B5F50012E377 /* JSONSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9B8652360B5F50012E377 /* JSONSerializer.swift */; };
 		84D9B8682360B6110012E377 /* Request+Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9B8672360B6110012E377 /* Request+Methods.swift */; };
 		84D9B86A2360B6740012E377 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9B8692360B6740012E377 /* ApiResponse.swift */; };
@@ -132,6 +133,7 @@
 		84B7DC0A23634F10000B6702 /* CurrencyPairSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPairSpec.swift; sourceTree = "<group>"; };
 		84B7DC0E23635036000B6702 /* CurrenciesViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesViewModelSpec.swift; sourceTree = "<group>"; };
 		84B7DC1023635171000B6702 /* MockPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPersistence.swift; sourceTree = "<group>"; };
+		84C0876523677EB00068A851 /* CurrenciesViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesViewControllerSpec.swift; sourceTree = "<group>"; };
 		84D9B8652360B5F50012E377 /* JSONSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSerializer.swift; sourceTree = "<group>"; };
 		84D9B8672360B6110012E377 /* Request+Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Request+Methods.swift"; sourceTree = "<group>"; };
 		84D9B8692360B6740012E377 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
@@ -384,6 +386,7 @@
 			isa = PBXGroup;
 			children = (
 				84B7DC0E23635036000B6702 /* CurrenciesViewModelSpec.swift */,
+				84C0876523677EB00068A851 /* CurrenciesViewControllerSpec.swift */,
 			);
 			path = Currencies;
 			sourceTree = "<group>";
@@ -574,6 +577,7 @@
 				84135E602367765C008841A7 /* Database+CurrencySpec.swift in Sources */,
 				84135E62236778D7008841A7 /* DatabaseSpec.swift in Sources */,
 				84B7DC0F23635036000B6702 /* CurrenciesViewModelSpec.swift in Sources */,
+				84C0876623677EB00068A851 /* CurrenciesViewControllerSpec.swift in Sources */,
 				84B7DBFA236344CA000B6702 /* NotificationManagerSpec.swift in Sources */,
 				84135E5923677415008841A7 /* UIViewController+DescribingSpec.swift in Sources */,
 				8488E3C2236358A600374CEE /* CurrencyCompareViewModelSpec.swift in Sources */,

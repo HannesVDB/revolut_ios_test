@@ -24,7 +24,8 @@ class CurrencyCompareViewController: UIViewController {
     
     // MARK: - Properties
     
-    private let viewModel = CurrencyCompareViewModel()
+    /// public for testability
+    var viewModel = CurrencyCompareViewModel()
     
     // MARK: - Lifecycle
     

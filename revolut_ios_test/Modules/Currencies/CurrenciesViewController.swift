@@ -26,6 +26,7 @@ class CurrenciesViewController: UIViewController {
     
     // MARK: - Properties
     
+    /// public for testability
     var viewModel = CurrenciesViewModel()
     
     // MARK: - Lifecycle

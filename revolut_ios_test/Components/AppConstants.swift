@@ -16,4 +16,8 @@ class AppConstants {
     class var coreDataContainer: String {
         return "revolut_ios_test"
     }
+    
+    class var currenciesStoryboardName: String {
+        return "Currencies"
+    }
 }

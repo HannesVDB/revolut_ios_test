@@ -10,6 +10,8 @@
 		84105B892360DABC00897773 /* CurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84105B872360DABC00897773 /* CurrencyCell.swift */; };
 		84105B8A2360DABC00897773 /* CurrencyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84105B882360DABC00897773 /* CurrencyCell.xib */; };
 		84105B8C2360DE1300897773 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84105B8B2360DE1300897773 /* Database.swift */; };
+		84135E5723677353008841A7 /* UIViewController+describing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84135E5623677353008841A7 /* UIViewController+describing.swift */; };
+		84135E5923677415008841A7 /* UIViewController+DescribingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84135E5823677415008841A7 /* UIViewController+DescribingSpec.swift */; };
 		8418F2162362176D00FC4AFF /* CurrencyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418F2152362176D00FC4AFF /* CurrencyPair.swift */; };
 		842CF35D23621D8B0086F63A /* CDCurrencyPair+CurrencyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842CF35C23621D8B0086F63A /* CDCurrencyPair+CurrencyPair.swift */; };
 		842CF3612362201E0086F63A /* UIView+reuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842CF3602362201E0086F63A /* UIView+reuse.swift */; };
@@ -40,7 +42,7 @@
 		8488E3C72364809A00374CEE /* JSONSerializerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488E3C62364809A00374CEE /* JSONSerializerSpec.swift */; };
 		8488E3C92364843900374CEE /* RequestMethodSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488E3C82364843900374CEE /* RequestMethodSpec.swift */; };
 		8488E3CB236484FB00374CEE /* ServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488E3CA236484FB00374CEE /* ServiceSpec.swift */; };
-		84B7DBF8236343F0000B6702 /* AppConstantsSpect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7DBF7236343F0000B6702 /* AppConstantsSpect.swift */; };
+		84B7DBF8236343F0000B6702 /* AppConstantsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7DBF7236343F0000B6702 /* AppConstantsSpec.swift */; };
 		84B7DBFA236344CA000B6702 /* NotificationManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7DBF9236344CA000B6702 /* NotificationManagerSpec.swift */; };
 		84B7DBFC23634708000B6702 /* UIView+ReuseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7DBFB23634708000B6702 /* UIView+ReuseSpec.swift */; };
 		84B7DC00236347DC000B6702 /* MockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7DBFE236347DC000B6702 /* MockCell.swift */; };
@@ -80,6 +82,8 @@
 		84105B872360DABC00897773 /* CurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCell.swift; sourceTree = "<group>"; };
 		84105B882360DABC00897773 /* CurrencyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyCell.xib; sourceTree = "<group>"; };
 		84105B8B2360DE1300897773 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		84135E5623677353008841A7 /* UIViewController+describing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+describing.swift"; sourceTree = "<group>"; };
+		84135E5823677415008841A7 /* UIViewController+DescribingSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+DescribingSpec.swift"; sourceTree = "<group>"; };
 		8418F2152362176D00FC4AFF /* CurrencyPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPair.swift; sourceTree = "<group>"; };
 		842CF35C23621D8B0086F63A /* CDCurrencyPair+CurrencyPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCurrencyPair+CurrencyPair.swift"; sourceTree = "<group>"; };
 		842CF3602362201E0086F63A /* UIView+reuse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+reuse.swift"; sourceTree = "<group>"; };
@@ -114,7 +118,7 @@
 		8488E3C62364809A00374CEE /* JSONSerializerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSerializerSpec.swift; sourceTree = "<group>"; };
 		8488E3C82364843900374CEE /* RequestMethodSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethodSpec.swift; sourceTree = "<group>"; };
 		8488E3CA236484FB00374CEE /* ServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceSpec.swift; sourceTree = "<group>"; };
-		84B7DBF7236343F0000B6702 /* AppConstantsSpect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstantsSpect.swift; sourceTree = "<group>"; };
+		84B7DBF7236343F0000B6702 /* AppConstantsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstantsSpec.swift; sourceTree = "<group>"; };
 		84B7DBF9236344CA000B6702 /* NotificationManagerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManagerSpec.swift; sourceTree = "<group>"; };
 		84B7DBFB23634708000B6702 /* UIView+ReuseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ReuseSpec.swift"; sourceTree = "<group>"; };
 		84B7DBFE236347DC000B6702 /* MockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCell.swift; sourceTree = "<group>"; };
@@ -318,9 +322,10 @@
 			isa = PBXGroup;
 			children = (
 				84B7DC022363489D000B6702 /* CustomViews */,
-				84B7DBF7236343F0000B6702 /* AppConstantsSpect.swift */,
+				84B7DBF7236343F0000B6702 /* AppConstantsSpec.swift */,
 				84B7DBF9236344CA000B6702 /* NotificationManagerSpec.swift */,
 				84B7DBFB23634708000B6702 /* UIView+ReuseSpec.swift */,
+				84135E5823677415008841A7 /* UIViewController+DescribingSpec.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -376,6 +381,7 @@
 				842CF36A2362D3AD0086F63A /* NotificationManager.swift */,
 				842CF362236220360086F63A /* UITableView+reuse.swift */,
 				842CF3602362201E0086F63A /* UIView+reuse.swift */,
+				84135E5623677353008841A7 /* UIViewController+describing.swift */,
 				842CF35E23621D9E0086F63A /* Custom Views */,
 			);
 			path = Components;
@@ -509,6 +515,7 @@
 			files = (
 				84D9B86A2360B6740012E377 /* ApiResponse.swift in Sources */,
 				844152952360A48000E4A7B2 /* Currency.swift in Sources */,
+				84135E5723677353008841A7 /* UIViewController+describing.swift in Sources */,
 				84D9B8662360B5F50012E377 /* JSONSerializer.swift in Sources */,
 				8437A64B2364DEF8007AEF54 /* CurrencyLabel.swift in Sources */,
 				84D9B8682360B6110012E377 /* Request+Methods.swift in Sources */,
@@ -552,12 +559,13 @@
 				84B7DBFC23634708000B6702 /* UIView+ReuseSpec.swift in Sources */,
 				84B7DC0F23635036000B6702 /* CurrenciesViewModelSpec.swift in Sources */,
 				84B7DBFA236344CA000B6702 /* NotificationManagerSpec.swift in Sources */,
+				84135E5923677415008841A7 /* UIViewController+DescribingSpec.swift in Sources */,
 				8488E3C2236358A600374CEE /* CurrencyCompareViewModelSpec.swift in Sources */,
 				8488E3C72364809A00374CEE /* JSONSerializerSpec.swift in Sources */,
 				8437A63B2364D83D007AEF54 /* Request+MethodsSpec.swift in Sources */,
 				84B7DC06236348E4000B6702 /* CurrencyCellSpec.swift in Sources */,
 				84B7DC0923634DFC000B6702 /* CurrencySpec.swift in Sources */,
-				84B7DBF8236343F0000B6702 /* AppConstantsSpect.swift in Sources */,
+				84B7DBF8236343F0000B6702 /* AppConstantsSpec.swift in Sources */,
 				8437A6372364CDCF007AEF54 /* Service+RequestsSpec.swift in Sources */,
 				84B7DC1123635171000B6702 /* MockPersistence.swift in Sources */,
 				84B7DC00236347DC000B6702 /* MockCell.swift in Sources */,

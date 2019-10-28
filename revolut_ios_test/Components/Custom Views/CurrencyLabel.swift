@@ -9,7 +9,6 @@
 import UIKit
 
 class CurrencyLabel: UILabel {
-    
     func set(value: Double) {
         let formatter = NumberFormatter()
         formatter.locale = Locale.current

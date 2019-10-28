@@ -13,9 +13,7 @@ class CurrenciesViewModel {
     // MARK: - Handlers
     
     var continueHandler:(() -> Void)?
-    
-    // MARK: - Translations
-    
+        
     // MARK: - Properties
     
     var currencies: [CurrencyCellItem] {
@@ -39,7 +37,6 @@ class CurrenciesViewModel {
     private let database: Persistence
     
     // MARK: - Init
-    
     
     init(database: Persistence = Database.shared) {
         self.database = database

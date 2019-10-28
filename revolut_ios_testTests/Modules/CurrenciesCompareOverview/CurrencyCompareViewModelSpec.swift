@@ -71,12 +71,26 @@ class CurrencyCompareViewModelSpec: XCTestCase {
         sut.reloadData()
         XCTAssertTrue(sut.hasData)
     }
+    
+    func testDeletShouldCallDatabase() {
+        service.didSucceed = true
+        sut.reloadData()
+        sut.delete(at: 0)
+        XCTAssertTrue(database.deleteCalled)
+    }
+    
+    func testShouldNotCallDeleteWhenNoItems() {
+        sut.delete(at: 0)
+        XCTAssertFalse(database.deleteCalled)
+    }
 }
 
 fileprivate class MockCurrenciesPersistence: MockPersistence {
     
     var persistCalled = false
     var currencyCalled = false
+    var deleteCalled = false
+    
     override func persist(pair: CurrencyPair) {
         persistCalled = true
     }
@@ -84,6 +98,10 @@ fileprivate class MockCurrenciesPersistence: MockPersistence {
     override var currencyPairs: [CurrencyPair]? {
         currencyCalled = true
         return [CurrencyPair(currency: Currency(abbreviation: "EUR"), comparisonCurrency: Currency(abbreviation: "USD"))]
+    }
+    
+    override func deleteCurrencyPair(_ pair: CurrencyPair) {
+        deleteCalled = true
     }
 }
 

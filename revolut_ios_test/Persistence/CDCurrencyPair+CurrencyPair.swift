@@ -14,7 +14,7 @@ extension CDCurrencyPair {
         pair.currency = Currency(abbreviation: self.currencyAbbreviation)
         pair.comparisonCurrency = Currency(abbreviation: self.compareCurrencyAbbreviation)
         pair.dateAdded = self.dateAdded ?? Date()
-        pair.id = self.id ?? ""
+        pair.id = self.id ?? UUID().uuidString
         return pair
     }
 }

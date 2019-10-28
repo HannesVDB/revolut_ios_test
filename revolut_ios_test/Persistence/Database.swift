@@ -23,7 +23,6 @@ class Database: Persistence {
     
     // MARK: - Init
     
-    // Init our database with a core data container
     init(container: NSPersistentContainer = NSPersistentContainer(name: AppConstants.coreDataContainer)) {
         self.container = container
         container.loadPersistentStores { description, error in
@@ -36,13 +35,11 @@ class Database: Persistence {
     
     // MARK: - Methods
     
-    // Retreive the NSManagedObject for a certain CoreData type
     func object<T: NSManagedObject>(for type: T.Type) -> NSManagedObject? {
         guard let entity = NSEntityDescription.entity(forEntityName: type.name, in: container.viewContext) else { return nil }
         return NSManagedObject(entity: entity, insertInto: container.viewContext)
     }
     
-    // Save in curernt context
     func save() {
         do {
             try container.viewContext.save()
@@ -51,14 +48,13 @@ class Database: Persistence {
         }
     }
     
-    // Retreive data from current context
-    func fetch<T: NSManagedObject>(for type: T.Type) -> [T] {
+    func fetch<T: NSManagedObject>(for type: T.Type) -> [T]? {
         do {
             let request = fetchRequest(for: type)
-            return try container.viewContext.fetch(request) as! [T]
+            return try container.viewContext.fetch(request) as? [T]
         } catch {
             print("Could not retreive \(error)")
-            return []
+            return nil
         }
     }
     
@@ -81,7 +77,6 @@ class Database: Persistence {
 // MARK: - Helper
 
 private extension Database {
-    // Utility method tho create a NSFetchRequest for a certain NSManagedObject
     private func fetchRequest<T: NSManagedObject>(for type: T.Type) -> NSFetchRequest<NSManagedObject> {
         return NSFetchRequest<NSManagedObject>(entityName: type.name)
     }

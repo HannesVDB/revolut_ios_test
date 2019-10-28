@@ -58,8 +58,6 @@ class CurrencyCompareViewController: UIViewController {
             }
         }
     }
-    
-    // MARK: - IBActions
 }
 
 extension CurrencyCompareViewController: UITableViewDelegate, UITableViewDataSource {

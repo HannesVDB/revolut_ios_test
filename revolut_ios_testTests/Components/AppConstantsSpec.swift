@@ -1,5 +1,5 @@
 //
-//  AppConstantsSpect.swift
+//  AppConstantsSpec.swift
 //  revolut_ios_testTests
 //
 //  Created by Hannes Van den Berghe on 25/10/2019.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import revolut_ios_test
 
-class AppConstantsSpect: XCTestCase {
+class AppConstantsSpec: XCTestCase {
 
     func testBaseURLShouldBeCorrect() {
         XCTAssertEqual(AppConstants.baseURL?.absoluteString, "https://europe-west1-revolut-230009.cloudfunctions.net/")
@@ -17,5 +17,9 @@ class AppConstantsSpect: XCTestCase {
     
     func testCoreDataContainerValueShouldBeCorrect() {
         XCTAssertEqual(AppConstants.coreDataContainer, "revolut_ios_test")
+    }
+    
+    func testCurrenciesStoryboardNameShouldBeCorrect() {
+        XCTAssertEqual(AppConstants.currenciesStoryboardName, "Currencies")
     }
 }

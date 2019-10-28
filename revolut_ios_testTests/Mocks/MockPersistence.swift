@@ -10,12 +10,15 @@ import Foundation
 @testable import revolut_ios_test
 
 class MockPersistence: Persistence {
-    
     func persist(pair: CurrencyPair) {
         
     }
     
     var currencyPairs: [CurrencyPair]? {
         return nil
+    }
+    
+    func deleteCurrencyPair(_ pair: CurrencyPair) {
+        
     }
 }

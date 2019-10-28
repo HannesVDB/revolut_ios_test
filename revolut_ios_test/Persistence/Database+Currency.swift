@@ -23,7 +23,10 @@ extension Database {
     
     var currencyPairs: [CurrencyPair]? {
         let items = fetch(for: CDCurrencyPair.self)
-        return items.sorted(by: { $0.dateAdded! > $1.dateAdded! }).compactMap { $0.model }
+        return items?.sorted(by: { c1, c2 -> Bool in
+            guard let firstDate = c1.dateAdded, let secondDate = c2.dateAdded else { return false }
+            return firstDate > secondDate
+        }).compactMap { $0.model }
     }
     
     private func currencyPair(for primaryKey: String) -> CDCurrencyPair? {

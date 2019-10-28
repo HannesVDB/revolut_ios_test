@@ -38,8 +38,8 @@ class CurrenciesViewController: UIViewController {
                 self.dismiss(animated: true, completion: nil)
                 return
             }
-            let storyboard = UIStoryboard(name: "Currencies", bundle: nil)
-            guard let controller = storyboard.instantiateViewController(identifier: "CurrenciesViewController") as? CurrenciesViewController else { return }
+            let storyboard = UIStoryboard(name: AppConstants.currenciesStoryboardName, bundle: nil)
+            guard let controller = storyboard.instantiateViewController(identifier: CurrenciesViewController.name) as? CurrenciesViewController else { return }
             controller.viewModel = self.viewModel
             controller.reloadHandler = {
                 self.reloadHandler?()
@@ -52,10 +52,6 @@ class CurrenciesViewController: UIViewController {
         super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = true
     }
-    
-    // MARK: - Methods
-    
-    // MARK: - IBActions
 }
 
 extension CurrenciesViewController: UITableViewDelegate, UITableViewDataSource {

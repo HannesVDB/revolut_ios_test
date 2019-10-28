@@ -12,6 +12,8 @@
 		84105B8C2360DE1300897773 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84105B8B2360DE1300897773 /* Database.swift */; };
 		84135E5723677353008841A7 /* UIViewController+describing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84135E5623677353008841A7 /* UIViewController+describing.swift */; };
 		84135E5923677415008841A7 /* UIViewController+DescribingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84135E5823677415008841A7 /* UIViewController+DescribingSpec.swift */; };
+		84135E602367765C008841A7 /* Database+CurrencySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84135E5F2367765C008841A7 /* Database+CurrencySpec.swift */; };
+		84135E62236778D7008841A7 /* DatabaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84135E61236778D7008841A7 /* DatabaseSpec.swift */; };
 		8418F2162362176D00FC4AFF /* CurrencyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418F2152362176D00FC4AFF /* CurrencyPair.swift */; };
 		842CF35D23621D8B0086F63A /* CDCurrencyPair+CurrencyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842CF35C23621D8B0086F63A /* CDCurrencyPair+CurrencyPair.swift */; };
 		842CF3612362201E0086F63A /* UIView+reuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842CF3602362201E0086F63A /* UIView+reuse.swift */; };
@@ -84,6 +86,8 @@
 		84105B8B2360DE1300897773 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		84135E5623677353008841A7 /* UIViewController+describing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+describing.swift"; sourceTree = "<group>"; };
 		84135E5823677415008841A7 /* UIViewController+DescribingSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+DescribingSpec.swift"; sourceTree = "<group>"; };
+		84135E5F2367765C008841A7 /* Database+CurrencySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+CurrencySpec.swift"; sourceTree = "<group>"; };
+		84135E61236778D7008841A7 /* DatabaseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseSpec.swift; sourceTree = "<group>"; };
 		8418F2152362176D00FC4AFF /* CurrencyPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPair.swift; sourceTree = "<group>"; };
 		842CF35C23621D8B0086F63A /* CDCurrencyPair+CurrencyPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCurrencyPair+CurrencyPair.swift"; sourceTree = "<group>"; };
 		842CF3602362201E0086F63A /* UIView+reuse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+reuse.swift"; sourceTree = "<group>"; };
@@ -162,6 +166,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84135E5B23677646008841A7 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				84135E5F2367765C008841A7 /* Database+CurrencySpec.swift */,
+				84135E61236778D7008841A7 /* DatabaseSpec.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
 		842CF35E23621D9E0086F63A /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +237,7 @@
 				84B7DBFD236347C4000B6702 /* Mocks */,
 				84B7DC0723634DEC000B6702 /* Models */,
 				84B7DC0C23635004000B6702 /* Modules */,
+				84135E5B23677646008841A7 /* Persistence */,
 				8488E3C32364806400374CEE /* Service */,
 			);
 			path = revolut_ios_testTests;
@@ -321,11 +335,11 @@
 		84B7DBF6236343BF000B6702 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				84B7DC022363489D000B6702 /* CustomViews */,
 				84B7DBF7236343F0000B6702 /* AppConstantsSpec.swift */,
 				84B7DBF9236344CA000B6702 /* NotificationManagerSpec.swift */,
 				84B7DBFB23634708000B6702 /* UIView+ReuseSpec.swift */,
 				84135E5823677415008841A7 /* UIViewController+DescribingSpec.swift */,
+				84B7DC022363489D000B6702 /* CustomViews */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -557,6 +571,8 @@
 				8488E3CB236484FB00374CEE /* ServiceSpec.swift in Sources */,
 				84B7DC0B23634F10000B6702 /* CurrencyPairSpec.swift in Sources */,
 				84B7DBFC23634708000B6702 /* UIView+ReuseSpec.swift in Sources */,
+				84135E602367765C008841A7 /* Database+CurrencySpec.swift in Sources */,
+				84135E62236778D7008841A7 /* DatabaseSpec.swift in Sources */,
 				84B7DC0F23635036000B6702 /* CurrenciesViewModelSpec.swift in Sources */,
 				84B7DBFA236344CA000B6702 /* NotificationManagerSpec.swift in Sources */,
 				84135E5923677415008841A7 /* UIViewController+DescribingSpec.swift in Sources */,

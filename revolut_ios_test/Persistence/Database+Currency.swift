@@ -34,10 +34,7 @@ extension Database {
     }
     
     func deleteCurrencyPair(_ pair: CurrencyPair) {
-        guard let pair = currencyPair(for: pair.id) else {
-            print("Not found")
-            return
-        }
+        guard let pair = currencyPair(for: pair.id) else { return }
         delete(value: pair)
     }
 }

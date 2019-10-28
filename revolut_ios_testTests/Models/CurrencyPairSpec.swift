@@ -25,6 +25,8 @@ class CurrencyPairSpec: XCTestCase {
     func testPairShouldHaveTheCorrectValues() {
         XCTAssertEqual(sut.currency?.abbreviation, currency.abbreviation)
         XCTAssertEqual(sut.comparisonCurrency?.abbreviation, comparisonCurrency.abbreviation)
+        XCTAssertNotNil(sut.id)
+        XCTAssertNotNil(sut.dateAdded)
     }
     
     func testPairShouldHaveTheCorrectKey() {

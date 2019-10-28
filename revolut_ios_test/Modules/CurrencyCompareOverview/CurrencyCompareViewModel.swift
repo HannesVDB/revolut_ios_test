@@ -56,7 +56,8 @@ class CurrencyCompareViewModel {
     
     func reloadData(completion:(() -> Void)? = nil) {
         let currencyPairs = database.currencyPairs ?? []
-        service.exchangeRate(for: currencyPairs) { reponse in
+        service.exchangeRate(for: currencyPairs) { [weak self] reponse in
+            guard let self = self else { return }
             switch reponse {
             case .success(let response):
                 guard let response = response else { return }

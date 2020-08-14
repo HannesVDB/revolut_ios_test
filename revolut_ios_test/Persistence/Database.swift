@@ -12,6 +12,7 @@ protocol Persistence {
     var currencyPairs: [CurrencyPair]? { get }
     func persist(pair: CurrencyPair)
     func deleteCurrencyPair(_ pair: CurrencyPair)
+    func deleteAll()
 }
 
 class Database: Persistence {
@@ -71,6 +72,18 @@ class Database: Persistence {
     
     func delete<T: NSManagedObject>(value: T) {
         container.viewContext.delete(value)
+    }
+    
+    func deleteAll() {
+        let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "CDCurrencyPair")
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+
+        do {
+            try container.persistentStoreCoordinator.execute(deleteRequest, with: container.viewContext)
+        } catch let error as NSError {
+            // TODO: handle the error
+            print("Error \(error)")
+        }
     }
 }
 

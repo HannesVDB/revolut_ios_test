@@ -9,7 +9,7 @@
 import Foundation
 @testable import revolut_ios_test
 
-class MockPersistence: Persistence {
+class MockPersistence: Persistence {    
     func persist(pair: CurrencyPair) {
         
     }
@@ -19,6 +19,10 @@ class MockPersistence: Persistence {
     }
     
     func deleteCurrencyPair(_ pair: CurrencyPair) {
+        
+    }
+    
+    func deleteAll() {
         
     }
 }

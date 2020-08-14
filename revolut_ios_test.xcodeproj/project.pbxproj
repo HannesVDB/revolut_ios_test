@@ -51,7 +51,7 @@
 		84AFFE2024E68D5F005422BF /* CurrencyRateCellSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFFE1F24E68D5F005422BF /* CurrencyRateCellSpec.swift */; };
 		84AFFE2324E68DB2005422BF /* MockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFFE2224E68DB2005422BF /* MockTableViewCell.swift */; };
 		84AFFE2624E68E5F005422BF /* UIViewController+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFFE2524E68E5F005422BF /* UIViewController+Load.swift */; };
-		84AFFE2E24E691D7005422BF /* revolut_ios_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFFE2D24E691D7005422BF /* revolut_ios_testUITests.swift */; };
+		84AFFE3824E6926F005422BF /* CurrenciesOverviewUISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFFE3724E6926F005422BF /* CurrenciesOverviewUISpec.swift */; };
 		84B7DBF8236343F0000B6702 /* AppConstantsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7DBF7236343F0000B6702 /* AppConstantsSpec.swift */; };
 		84B7DBFA236344CA000B6702 /* NotificationManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7DBF9236344CA000B6702 /* NotificationManagerSpec.swift */; };
 		84B7DBFC23634708000B6702 /* UIView+ReuseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7DBFB23634708000B6702 /* UIView+ReuseSpec.swift */; };
@@ -160,8 +160,9 @@
 		84AFFE2224E68DB2005422BF /* MockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTableViewCell.swift; sourceTree = "<group>"; };
 		84AFFE2524E68E5F005422BF /* UIViewController+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Load.swift"; sourceTree = "<group>"; };
 		84AFFE2B24E691D7005422BF /* revolut_ios_testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = revolut_ios_testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		84AFFE2D24E691D7005422BF /* revolut_ios_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = revolut_ios_testUITests.swift; sourceTree = "<group>"; };
 		84AFFE2F24E691D7005422BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84AFFE3624E6926F005422BF /* revolut_ios_testUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "revolut_ios_testUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		84AFFE3724E6926F005422BF /* CurrenciesOverviewUISpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesOverviewUISpec.swift; sourceTree = "<group>"; };
 		84B7DBF7236343F0000B6702 /* AppConstantsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstantsSpec.swift; sourceTree = "<group>"; };
 		84B7DBF9236344CA000B6702 /* NotificationManagerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManagerSpec.swift; sourceTree = "<group>"; };
 		84B7DBFB23634708000B6702 /* UIView+ReuseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ReuseSpec.swift"; sourceTree = "<group>"; };
@@ -468,10 +469,19 @@
 		84AFFE2C24E691D7005422BF /* revolut_ios_testUITests */ = {
 			isa = PBXGroup;
 			children = (
-				84AFFE2D24E691D7005422BF /* revolut_ios_testUITests.swift */,
+				84AFFE3524E69258005422BF /* Currencies */,
 				84AFFE2F24E691D7005422BF /* Info.plist */,
 			);
 			path = revolut_ios_testUITests;
+			sourceTree = "<group>";
+		};
+		84AFFE3524E69258005422BF /* Currencies */ = {
+			isa = PBXGroup;
+			children = (
+				84AFFE3724E6926F005422BF /* CurrenciesOverviewUISpec.swift */,
+				84AFFE3624E6926F005422BF /* revolut_ios_testUITests-Bridging-Header.h */,
+			);
+			path = Currencies;
 			sourceTree = "<group>";
 		};
 		84B7DBF6236343BF000B6702 /* Components */ = {
@@ -665,6 +675,7 @@
 					};
 					84AFFE2A24E691D7005422BF = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 						TestTargetID = 844152642360A1F300E4A7B2;
 					};
 				};
@@ -902,7 +913,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84AFFE2E24E691D7005422BF /* revolut_ios_testUITests.swift in Sources */,
+				84AFFE3824E6926F005422BF /* CurrenciesOverviewUISpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1183,6 +1194,7 @@
 		84AFFE3324E691D7005422BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FAJTRUZ6J9;
 				INFOPLIST_FILE = revolut_ios_testUITests/Info.plist;
@@ -1194,6 +1206,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.icapps..revolut-ios-testUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "revolut_ios_testUITests/Currencies/revolut_ios_testUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = revolut_ios_test;
@@ -1203,6 +1217,7 @@
 		84AFFE3424E691D7005422BF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FAJTRUZ6J9;
 				INFOPLIST_FILE = revolut_ios_testUITests/Info.plist;
@@ -1214,6 +1229,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.icapps..revolut-ios-testUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "revolut_ios_testUITests/Currencies/revolut_ios_testUITests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = revolut_ios_test;

@@ -74,13 +74,13 @@
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "FB_REFERENCE_IMAGE_DIR"
-            value = "$(SOURCE_ROOT)/$(PROJECT_NAME)Tests/ReferenceImages"
+            value = "$(SOURCE_ROOT)/$(PROJECT_NAME)Tests_quick_nimble/ReferenceImages"
             isEnabled = "YES">
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "FB_REFERENCE_IMAGE_DIR"
             value = "$(SOURCE_ROOT)/$(PROJECT_NAME)Tests/FailureDiffs"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </EnvironmentVariable>
       </EnvironmentVariables>
    </LaunchAction>

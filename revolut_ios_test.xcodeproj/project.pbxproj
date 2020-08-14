@@ -52,6 +52,8 @@
 		84AFFE2324E68DB2005422BF /* MockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFFE2224E68DB2005422BF /* MockTableViewCell.swift */; };
 		84AFFE2624E68E5F005422BF /* UIViewController+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFFE2524E68E5F005422BF /* UIViewController+Load.swift */; };
 		84AFFE3824E6926F005422BF /* CurrenciesOverviewUISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFFE3724E6926F005422BF /* CurrenciesOverviewUISpec.swift */; };
+		84AFFE3B24E69F64005422BF /* ServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFFE3A24E69F64005422BF /* ServiceSpec.swift */; };
+		84AFFE3F24E6B991005422BF /* CurrencyCompareViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFFE3E24E6B991005422BF /* CurrencyCompareViewControllerSpec.swift */; };
 		84B7DBF8236343F0000B6702 /* AppConstantsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7DBF7236343F0000B6702 /* AppConstantsSpec.swift */; };
 		84B7DBFA236344CA000B6702 /* NotificationManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7DBF9236344CA000B6702 /* NotificationManagerSpec.swift */; };
 		84B7DBFC23634708000B6702 /* UIView+ReuseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7DBFB23634708000B6702 /* UIView+ReuseSpec.swift */; };
@@ -163,6 +165,8 @@
 		84AFFE2F24E691D7005422BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84AFFE3624E6926F005422BF /* revolut_ios_testUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "revolut_ios_testUITests-Bridging-Header.h"; sourceTree = "<group>"; };
 		84AFFE3724E6926F005422BF /* CurrenciesOverviewUISpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesOverviewUISpec.swift; sourceTree = "<group>"; };
+		84AFFE3A24E69F64005422BF /* ServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceSpec.swift; sourceTree = "<group>"; };
+		84AFFE3E24E6B991005422BF /* CurrencyCompareViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCompareViewControllerSpec.swift; sourceTree = "<group>"; };
 		84B7DBF7236343F0000B6702 /* AppConstantsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstantsSpec.swift; sourceTree = "<group>"; };
 		84B7DBF9236344CA000B6702 /* NotificationManagerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManagerSpec.swift; sourceTree = "<group>"; };
 		84B7DBFB23634708000B6702 /* UIView+ReuseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ReuseSpec.swift"; sourceTree = "<group>"; };
@@ -409,6 +413,8 @@
 		845BD3C424E683420067EFDB /* revolut_ios_testTests_quick_nimble */ = {
 			isa = PBXGroup;
 			children = (
+				84AFFE3C24E6B972005422BF /* Modules */,
+				84AFFE3924E69F47005422BF /* Service */,
 				84AFFE2424E68E4D005422BF /* Extensions */,
 				84AFFE2124E68D94005422BF /* Mocks */,
 				845BD3CD24E683710067EFDB /* Components */,
@@ -482,6 +488,30 @@
 				84AFFE3624E6926F005422BF /* revolut_ios_testUITests-Bridging-Header.h */,
 			);
 			path = Currencies;
+			sourceTree = "<group>";
+		};
+		84AFFE3924E69F47005422BF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				84AFFE3A24E69F64005422BF /* ServiceSpec.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		84AFFE3C24E6B972005422BF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				84AFFE3D24E6B97A005422BF /* CurrenciesCompareOverview */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		84AFFE3D24E6B97A005422BF /* CurrenciesCompareOverview */ = {
+			isa = PBXGroup;
+			children = (
+				84AFFE3E24E6B991005422BF /* CurrencyCompareViewControllerSpec.swift */,
+			);
+			path = CurrenciesCompareOverview;
 			sourceTree = "<group>";
 		};
 		84B7DBF6236343BF000B6702 /* Components */ = {
@@ -903,8 +933,10 @@
 				84AFFE1C24E68563005422BF /* ActionButtonSpec.swift in Sources */,
 				845BD3CF24E683840067EFDB /* AppConstantsSpec.swift in Sources */,
 				84AFFE2324E68DB2005422BF /* MockTableViewCell.swift in Sources */,
+				84AFFE3B24E69F64005422BF /* ServiceSpec.swift in Sources */,
 				84AFFE1E24E68B88005422BF /* CurrencyLabelSpec.swift in Sources */,
 				84AFFE2624E68E5F005422BF /* UIViewController+Load.swift in Sources */,
+				84AFFE3F24E6B991005422BF /* CurrencyCompareViewControllerSpec.swift in Sources */,
 				84AFFE2024E68D5F005422BF /* CurrencyRateCellSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

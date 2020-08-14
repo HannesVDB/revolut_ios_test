@@ -17,4 +17,7 @@ extension UIViewController {
         _ = view
     }
     
+    func preloadView() {
+        _ = view
+    }
 }

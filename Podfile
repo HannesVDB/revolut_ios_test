@@ -18,6 +18,18 @@ target 'revolut_ios_test' do
     pod 'Quick'
     pod 'Nimble'
     pod 'Nimble-Snapshots'
+    pod 'Mockingjay'
+    
   end
 
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+        if %w(Mockingjay URITemplate).include?(target.name)
+            config.build_settings['SWIFT_VERSION'] = '4.2'
+        end
+    end
+  end
 end

@@ -47,6 +47,11 @@
 		8488E3C92364843900374CEE /* RequestMethodSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488E3C82364843900374CEE /* RequestMethodSpec.swift */; };
 		8488E3CB236484FB00374CEE /* ServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488E3CA236484FB00374CEE /* ServiceSpec.swift */; };
 		84AFFE1C24E68563005422BF /* ActionButtonSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFFE1B24E68563005422BF /* ActionButtonSpec.swift */; };
+		84AFFE1E24E68B88005422BF /* CurrencyLabelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFFE1D24E68B88005422BF /* CurrencyLabelSpec.swift */; };
+		84AFFE2024E68D5F005422BF /* CurrencyRateCellSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFFE1F24E68D5F005422BF /* CurrencyRateCellSpec.swift */; };
+		84AFFE2324E68DB2005422BF /* MockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFFE2224E68DB2005422BF /* MockTableViewCell.swift */; };
+		84AFFE2624E68E5F005422BF /* UIViewController+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFFE2524E68E5F005422BF /* UIViewController+Load.swift */; };
+		84AFFE2E24E691D7005422BF /* revolut_ios_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFFE2D24E691D7005422BF /* revolut_ios_testUITests.swift */; };
 		84B7DBF8236343F0000B6702 /* AppConstantsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7DBF7236343F0000B6702 /* AppConstantsSpec.swift */; };
 		84B7DBFA236344CA000B6702 /* NotificationManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7DBF9236344CA000B6702 /* NotificationManagerSpec.swift */; };
 		84B7DBFC23634708000B6702 /* UIView+ReuseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7DBFB23634708000B6702 /* UIView+ReuseSpec.swift */; };
@@ -86,6 +91,13 @@
 			remoteInfo = revolut_ios_test;
 		};
 		845BD3C824E683420067EFDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8441525D2360A1F300E4A7B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 844152642360A1F300E4A7B2;
+			remoteInfo = revolut_ios_test;
+		};
+		84AFFE3024E691D7005422BF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8441525D2360A1F300E4A7B2 /* Project object */;
 			proxyType = 1;
@@ -143,6 +155,13 @@
 		8488E3C82364843900374CEE /* RequestMethodSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethodSpec.swift; sourceTree = "<group>"; };
 		8488E3CA236484FB00374CEE /* ServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceSpec.swift; sourceTree = "<group>"; };
 		84AFFE1B24E68563005422BF /* ActionButtonSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonSpec.swift; sourceTree = "<group>"; };
+		84AFFE1D24E68B88005422BF /* CurrencyLabelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyLabelSpec.swift; sourceTree = "<group>"; };
+		84AFFE1F24E68D5F005422BF /* CurrencyRateCellSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRateCellSpec.swift; sourceTree = "<group>"; };
+		84AFFE2224E68DB2005422BF /* MockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTableViewCell.swift; sourceTree = "<group>"; };
+		84AFFE2524E68E5F005422BF /* UIViewController+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Load.swift"; sourceTree = "<group>"; };
+		84AFFE2B24E691D7005422BF /* revolut_ios_testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = revolut_ios_testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84AFFE2D24E691D7005422BF /* revolut_ios_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = revolut_ios_testUITests.swift; sourceTree = "<group>"; };
+		84AFFE2F24E691D7005422BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84B7DBF7236343F0000B6702 /* AppConstantsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstantsSpec.swift; sourceTree = "<group>"; };
 		84B7DBF9236344CA000B6702 /* NotificationManagerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManagerSpec.swift; sourceTree = "<group>"; };
 		84B7DBFB23634708000B6702 /* UIView+ReuseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ReuseSpec.swift"; sourceTree = "<group>"; };
@@ -199,6 +218,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F988423FF86C5BBC0E80A863 /* Pods_revolut_ios_testTests_quick_nimble.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84AFFE2824E691D7005422BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +291,7 @@
 				844152672360A1F300E4A7B2 /* revolut_ios_test */,
 				844152812360A1F500E4A7B2 /* revolut_ios_testTests */,
 				845BD3C424E683420067EFDB /* revolut_ios_testTests_quick_nimble */,
+				84AFFE2C24E691D7005422BF /* revolut_ios_testUITests */,
 				844152662360A1F300E4A7B2 /* Products */,
 				429233866ACC0B5D0107B4F8 /* Pods */,
 				2C0421E9B9FC93720C3D77C4 /* Frameworks */,
@@ -277,6 +304,7 @@
 				844152652360A1F300E4A7B2 /* revolut_ios_test.app */,
 				8441527E2360A1F500E4A7B2 /* revolut_ios_testTests.xctest */,
 				845BD3C324E683420067EFDB /* revolut_ios_testTests_quick_nimble.xctest */,
+				84AFFE2B24E691D7005422BF /* revolut_ios_testUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -380,6 +408,8 @@
 		845BD3C424E683420067EFDB /* revolut_ios_testTests_quick_nimble */ = {
 			isa = PBXGroup;
 			children = (
+				84AFFE2424E68E4D005422BF /* Extensions */,
+				84AFFE2124E68D94005422BF /* Mocks */,
 				845BD3CD24E683710067EFDB /* Components */,
 				845BD3C724E683420067EFDB /* Info.plist */,
 			);
@@ -391,6 +421,8 @@
 			children = (
 				845BD3CE24E683840067EFDB /* AppConstantsSpec.swift */,
 				84AFFE1B24E68563005422BF /* ActionButtonSpec.swift */,
+				84AFFE1D24E68B88005422BF /* CurrencyLabelSpec.swift */,
+				84AFFE1F24E68D5F005422BF /* CurrencyRateCellSpec.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -415,6 +447,31 @@
 				8488E3CA236484FB00374CEE /* ServiceSpec.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		84AFFE2124E68D94005422BF /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				84AFFE2224E68DB2005422BF /* MockTableViewCell.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		84AFFE2424E68E4D005422BF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				84AFFE2524E68E5F005422BF /* UIViewController+Load.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		84AFFE2C24E691D7005422BF /* revolut_ios_testUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84AFFE2D24E691D7005422BF /* revolut_ios_testUITests.swift */,
+				84AFFE2F24E691D7005422BF /* Info.plist */,
+			);
+			path = revolut_ios_testUITests;
 			sourceTree = "<group>";
 		};
 		84B7DBF6236343BF000B6702 /* Components */ = {
@@ -567,6 +624,24 @@
 			productReference = 845BD3C324E683420067EFDB /* revolut_ios_testTests_quick_nimble.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		84AFFE2A24E691D7005422BF /* revolut_ios_testUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84AFFE3224E691D7005422BF /* Build configuration list for PBXNativeTarget "revolut_ios_testUITests" */;
+			buildPhases = (
+				84AFFE2724E691D7005422BF /* Sources */,
+				84AFFE2824E691D7005422BF /* Frameworks */,
+				84AFFE2924E691D7005422BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84AFFE3124E691D7005422BF /* PBXTargetDependency */,
+			);
+			name = revolut_ios_testUITests;
+			productName = revolut_ios_testUITests;
+			productReference = 84AFFE2B24E691D7005422BF /* revolut_ios_testUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -588,6 +663,10 @@
 						CreatedOnToolsVersion = 11.6;
 						TestTargetID = 844152642360A1F300E4A7B2;
 					};
+					84AFFE2A24E691D7005422BF = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 844152642360A1F300E4A7B2;
+					};
 				};
 			};
 			buildConfigurationList = 844152602360A1F300E4A7B2 /* Build configuration list for PBXProject "revolut_ios_test" */;
@@ -606,6 +685,7 @@
 				844152642360A1F300E4A7B2 /* revolut_ios_test */,
 				8441527D2360A1F500E4A7B2 /* revolut_ios_testTests */,
 				845BD3C224E683420067EFDB /* revolut_ios_testTests_quick_nimble */,
+				84AFFE2A24E691D7005422BF /* revolut_ios_testUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -634,6 +714,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		845BD3C124E683420067EFDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84AFFE2924E691D7005422BF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -804,6 +891,18 @@
 			files = (
 				84AFFE1C24E68563005422BF /* ActionButtonSpec.swift in Sources */,
 				845BD3CF24E683840067EFDB /* AppConstantsSpec.swift in Sources */,
+				84AFFE2324E68DB2005422BF /* MockTableViewCell.swift in Sources */,
+				84AFFE1E24E68B88005422BF /* CurrencyLabelSpec.swift in Sources */,
+				84AFFE2624E68E5F005422BF /* UIViewController+Load.swift in Sources */,
+				84AFFE2024E68D5F005422BF /* CurrencyRateCellSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84AFFE2724E691D7005422BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84AFFE2E24E691D7005422BF /* revolut_ios_testUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -819,6 +918,11 @@
 			isa = PBXTargetDependency;
 			target = 844152642360A1F300E4A7B2 /* revolut_ios_test */;
 			targetProxy = 845BD3C824E683420067EFDB /* PBXContainerItemProxy */;
+		};
+		84AFFE3124E691D7005422BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 844152642360A1F300E4A7B2 /* revolut_ios_test */;
+			targetProxy = 84AFFE3024E691D7005422BF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1076,6 +1180,46 @@
 			};
 			name = Release;
 		};
+		84AFFE3324E691D7005422BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FAJTRUZ6J9;
+				INFOPLIST_FILE = revolut_ios_testUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.icapps..revolut-ios-testUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = revolut_ios_test;
+			};
+			name = Debug;
+		};
+		84AFFE3424E691D7005422BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FAJTRUZ6J9;
+				INFOPLIST_FILE = revolut_ios_testUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.icapps..revolut-ios-testUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = revolut_ios_test;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1111,6 +1255,15 @@
 			buildConfigurations = (
 				845BD3CA24E683420067EFDB /* Debug */,
 				845BD3CB24E683420067EFDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84AFFE3224E691D7005422BF /* Build configuration list for PBXNativeTarget "revolut_ios_testUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84AFFE3324E691D7005422BF /* Debug */,
+				84AFFE3424E691D7005422BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

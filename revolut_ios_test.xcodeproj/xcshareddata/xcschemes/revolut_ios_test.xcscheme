@@ -49,6 +49,16 @@
                ReferencedContainer = "container:revolut_ios_test.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "84AFFE2A24E691D7005422BF"
+               BuildableName = "revolut_ios_testUITests.xctest"
+               BlueprintName = "revolut_ios_testUITests"
+               ReferencedContainer = "container:revolut_ios_test.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

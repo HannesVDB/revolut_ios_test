@@ -39,6 +39,16 @@
                ReferencedContainer = "container:revolut_ios_test.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "845BD3C224E683420067EFDB"
+               BuildableName = "revolut_ios_testTests_quick_nimble.xctest"
+               BlueprintName = "revolut_ios_testTests_quick_nimble"
+               ReferencedContainer = "container:revolut_ios_test.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

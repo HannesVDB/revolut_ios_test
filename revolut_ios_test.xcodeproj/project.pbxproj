@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83E0B244D94F4D10686A1FBE /* Pods_revolut_ios_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18903F9C9DBEF06F78768AD9 /* Pods_revolut_ios_test.framework */; };
 		84105B892360DABC00897773 /* CurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84105B872360DABC00897773 /* CurrencyCell.swift */; };
 		84105B8A2360DABC00897773 /* CurrencyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84105B882360DABC00897773 /* CurrencyCell.xib */; };
 		84105B8C2360DE1300897773 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84105B8B2360DE1300897773 /* Database.swift */; };
@@ -40,12 +41,12 @@
 		8441529A2360A70B00E4A7B2 /* ExchangeRateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844152992360A70B00E4A7B2 /* ExchangeRateRequest.swift */; };
 		8441529C2360A86500E4A7B2 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441529B2360A86500E4A7B2 /* RequestMethod.swift */; };
 		8441529E2360A87D00E4A7B2 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441529D2360A87D00E4A7B2 /* Request.swift */; };
-		845BD3C624E683420067EFDB /* revolut_ios_testTests_quick_nimble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BD3C524E683420067EFDB /* revolut_ios_testTests_quick_nimble.swift */; };
 		845BD3CF24E683840067EFDB /* AppConstantsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BD3CE24E683840067EFDB /* AppConstantsSpec.swift */; };
 		8488E3C2236358A600374CEE /* CurrencyCompareViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488E3C1236358A600374CEE /* CurrencyCompareViewModelSpec.swift */; };
 		8488E3C72364809A00374CEE /* JSONSerializerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488E3C62364809A00374CEE /* JSONSerializerSpec.swift */; };
 		8488E3C92364843900374CEE /* RequestMethodSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488E3C82364843900374CEE /* RequestMethodSpec.swift */; };
 		8488E3CB236484FB00374CEE /* ServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488E3CA236484FB00374CEE /* ServiceSpec.swift */; };
+		84AFFE1C24E68563005422BF /* ActionButtonSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFFE1B24E68563005422BF /* ActionButtonSpec.swift */; };
 		84B7DBF8236343F0000B6702 /* AppConstantsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7DBF7236343F0000B6702 /* AppConstantsSpec.swift */; };
 		84B7DBFA236344CA000B6702 /* NotificationManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7DBF9236344CA000B6702 /* NotificationManagerSpec.swift */; };
 		84B7DBFC23634708000B6702 /* UIView+ReuseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7DBFB23634708000B6702 /* UIView+ReuseSpec.swift */; };
@@ -72,6 +73,8 @@
 		84D9B87F2360BCFE0012E377 /* CurrenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9B87E2360BCFE0012E377 /* CurrenciesViewController.swift */; };
 		84D9B8812360BD060012E377 /* CurrenciesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9B8802360BD060012E377 /* CurrenciesViewModel.swift */; };
 		84F9147C236211E00038542C /* Database+Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F9147B236211E00038542C /* Database+Currency.swift */; };
+		F988423FF86C5BBC0E80A863 /* Pods_revolut_ios_testTests_quick_nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA0D61DDF990FD42AD1A68AB /* Pods_revolut_ios_testTests_quick_nimble.framework */; };
+		FB2CA69027982CE7A1F2CE5A /* Pods_revolut_ios_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0674AB2BC8522E19FF5D2C8 /* Pods_revolut_ios_testTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +95,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		116010469C2749C0D93CAB40 /* Pods-revolut_ios_testTests_quick_nimble.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-revolut_ios_testTests_quick_nimble.debug.xcconfig"; path = "Target Support Files/Pods-revolut_ios_testTests_quick_nimble/Pods-revolut_ios_testTests_quick_nimble.debug.xcconfig"; sourceTree = "<group>"; };
+		18903F9C9DBEF06F78768AD9 /* Pods_revolut_ios_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_revolut_ios_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F58DBF9839BE1D2926905D7 /* Pods-revolut_ios_testTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-revolut_ios_testTests.release.xcconfig"; path = "Target Support Files/Pods-revolut_ios_testTests/Pods-revolut_ios_testTests.release.xcconfig"; sourceTree = "<group>"; };
 		84105B872360DABC00897773 /* CurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCell.swift; sourceTree = "<group>"; };
 		84105B882360DABC00897773 /* CurrencyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyCell.xib; sourceTree = "<group>"; };
 		84105B8B2360DE1300897773 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
@@ -130,13 +136,13 @@
 		8441529B2360A86500E4A7B2 /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
 		8441529D2360A87D00E4A7B2 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		845BD3C324E683420067EFDB /* revolut_ios_testTests_quick_nimble.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = revolut_ios_testTests_quick_nimble.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		845BD3C524E683420067EFDB /* revolut_ios_testTests_quick_nimble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = revolut_ios_testTests_quick_nimble.swift; sourceTree = "<group>"; };
 		845BD3C724E683420067EFDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		845BD3CE24E683840067EFDB /* AppConstantsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstantsSpec.swift; sourceTree = "<group>"; };
 		8488E3C1236358A600374CEE /* CurrencyCompareViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCompareViewModelSpec.swift; sourceTree = "<group>"; };
 		8488E3C62364809A00374CEE /* JSONSerializerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSerializerSpec.swift; sourceTree = "<group>"; };
 		8488E3C82364843900374CEE /* RequestMethodSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethodSpec.swift; sourceTree = "<group>"; };
 		8488E3CA236484FB00374CEE /* ServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceSpec.swift; sourceTree = "<group>"; };
+		84AFFE1B24E68563005422BF /* ActionButtonSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonSpec.swift; sourceTree = "<group>"; };
 		84B7DBF7236343F0000B6702 /* AppConstantsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstantsSpec.swift; sourceTree = "<group>"; };
 		84B7DBF9236344CA000B6702 /* NotificationManagerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManagerSpec.swift; sourceTree = "<group>"; };
 		84B7DBFB23634708000B6702 /* UIView+ReuseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ReuseSpec.swift"; sourceTree = "<group>"; };
@@ -163,6 +169,12 @@
 		84D9B87E2360BCFE0012E377 /* CurrenciesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesViewController.swift; sourceTree = "<group>"; };
 		84D9B8802360BD060012E377 /* CurrenciesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesViewModel.swift; sourceTree = "<group>"; };
 		84F9147B236211E00038542C /* Database+Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+Currency.swift"; sourceTree = "<group>"; };
+		A38F6F30D7E0940646069CF0 /* Pods-revolut_ios_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-revolut_ios_test.release.xcconfig"; path = "Target Support Files/Pods-revolut_ios_test/Pods-revolut_ios_test.release.xcconfig"; sourceTree = "<group>"; };
+		B0674AB2BC8522E19FF5D2C8 /* Pods_revolut_ios_testTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_revolut_ios_testTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA0D61DDF990FD42AD1A68AB /* Pods_revolut_ios_testTests_quick_nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_revolut_ios_testTests_quick_nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D16110D0F76BC3CC043DB9AB /* Pods-revolut_ios_testTests_quick_nimble.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-revolut_ios_testTests_quick_nimble.release.xcconfig"; path = "Target Support Files/Pods-revolut_ios_testTests_quick_nimble/Pods-revolut_ios_testTests_quick_nimble.release.xcconfig"; sourceTree = "<group>"; };
+		DA04F1F7039D5A870F7F8378 /* Pods-revolut_ios_testTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-revolut_ios_testTests.debug.xcconfig"; path = "Target Support Files/Pods-revolut_ios_testTests/Pods-revolut_ios_testTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F62B100963379BF98730BE17 /* Pods-revolut_ios_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-revolut_ios_test.debug.xcconfig"; path = "Target Support Files/Pods-revolut_ios_test/Pods-revolut_ios_test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +182,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83E0B244D94F4D10686A1FBE /* Pods_revolut_ios_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +190,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB2CA69027982CE7A1F2CE5A /* Pods_revolut_ios_testTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,12 +198,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F988423FF86C5BBC0E80A863 /* Pods_revolut_ios_testTests_quick_nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C0421E9B9FC93720C3D77C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18903F9C9DBEF06F78768AD9 /* Pods_revolut_ios_test.framework */,
+				B0674AB2BC8522E19FF5D2C8 /* Pods_revolut_ios_testTests.framework */,
+				BA0D61DDF990FD42AD1A68AB /* Pods_revolut_ios_testTests_quick_nimble.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		429233866ACC0B5D0107B4F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F62B100963379BF98730BE17 /* Pods-revolut_ios_test.debug.xcconfig */,
+				A38F6F30D7E0940646069CF0 /* Pods-revolut_ios_test.release.xcconfig */,
+				DA04F1F7039D5A870F7F8378 /* Pods-revolut_ios_testTests.debug.xcconfig */,
+				2F58DBF9839BE1D2926905D7 /* Pods-revolut_ios_testTests.release.xcconfig */,
+				116010469C2749C0D93CAB40 /* Pods-revolut_ios_testTests_quick_nimble.debug.xcconfig */,
+				D16110D0F76BC3CC043DB9AB /* Pods-revolut_ios_testTests_quick_nimble.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		84135E5B23677646008841A7 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +266,8 @@
 				844152812360A1F500E4A7B2 /* revolut_ios_testTests */,
 				845BD3C424E683420067EFDB /* revolut_ios_testTests_quick_nimble */,
 				844152662360A1F300E4A7B2 /* Products */,
+				429233866ACC0B5D0107B4F8 /* Pods */,
+				2C0421E9B9FC93720C3D77C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -341,7 +381,6 @@
 			isa = PBXGroup;
 			children = (
 				845BD3CD24E683710067EFDB /* Components */,
-				845BD3C524E683420067EFDB /* revolut_ios_testTests_quick_nimble.swift */,
 				845BD3C724E683420067EFDB /* Info.plist */,
 			);
 			path = revolut_ios_testTests_quick_nimble;
@@ -351,6 +390,7 @@
 			isa = PBXGroup;
 			children = (
 				845BD3CE24E683840067EFDB /* AppConstantsSpec.swift */,
+				84AFFE1B24E68563005422BF /* ActionButtonSpec.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -474,6 +514,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 844152872360A1F500E4A7B2 /* Build configuration list for PBXNativeTarget "revolut_ios_test" */;
 			buildPhases = (
+				9CC76B4ED23DC1EE31178E6C /* [CP] Check Pods Manifest.lock */,
 				844152612360A1F300E4A7B2 /* Sources */,
 				844152622360A1F300E4A7B2 /* Frameworks */,
 				844152632360A1F300E4A7B2 /* Resources */,
@@ -491,6 +532,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8441528A2360A1F500E4A7B2 /* Build configuration list for PBXNativeTarget "revolut_ios_testTests" */;
 			buildPhases = (
+				C3008FE404B9C6E6C471EB4A /* [CP] Check Pods Manifest.lock */,
 				8441527A2360A1F500E4A7B2 /* Sources */,
 				8441527B2360A1F500E4A7B2 /* Frameworks */,
 				8441527C2360A1F500E4A7B2 /* Resources */,
@@ -509,9 +551,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 845BD3CC24E683420067EFDB /* Build configuration list for PBXNativeTarget "revolut_ios_testTests_quick_nimble" */;
 			buildPhases = (
+				E0352EBB08EC5472E59B5C7F /* [CP] Check Pods Manifest.lock */,
 				845BD3BF24E683420067EFDB /* Sources */,
 				845BD3C024E683420067EFDB /* Frameworks */,
 				845BD3C124E683420067EFDB /* Resources */,
+				B3E1B23FBE8726C783683003 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -598,6 +642,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9CC76B4ED23DC1EE31178E6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-revolut_ios_test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3E1B23FBE8726C783683003 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-revolut_ios_testTests_quick_nimble/Pods-revolut_ios_testTests_quick_nimble-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-revolut_ios_testTests_quick_nimble/Pods-revolut_ios_testTests_quick_nimble-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-revolut_ios_testTests_quick_nimble/Pods-revolut_ios_testTests_quick_nimble-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3008FE404B9C6E6C471EB4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-revolut_ios_testTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0352EBB08EC5472E59B5C7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-revolut_ios_testTests_quick_nimble-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		844152612360A1F300E4A7B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -672,8 +802,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84AFFE1C24E68563005422BF /* ActionButtonSpec.swift in Sources */,
 				845BD3CF24E683840067EFDB /* AppConstantsSpec.swift in Sources */,
-				845BD3C624E683420067EFDB /* revolut_ios_testTests_quick_nimble.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -820,6 +950,7 @@
 		};
 		844152882360A1F500E4A7B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F62B100963379BF98730BE17 /* Pods-revolut_ios_test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -838,6 +969,7 @@
 		};
 		844152892360A1F500E4A7B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A38F6F30D7E0940646069CF0 /* Pods-revolut_ios_test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -856,6 +988,7 @@
 		};
 		8441528B2360A1F500E4A7B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA04F1F7039D5A870F7F8378 /* Pods-revolut_ios_testTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -878,6 +1011,7 @@
 		};
 		8441528C2360A1F500E4A7B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F58DBF9839BE1D2926905D7 /* Pods-revolut_ios_testTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -900,6 +1034,7 @@
 		};
 		845BD3CA24E683420067EFDB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 116010469C2749C0D93CAB40 /* Pods-revolut_ios_testTests_quick_nimble.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -921,6 +1056,7 @@
 		};
 		845BD3CB24E683420067EFDB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D16110D0F76BC3CC043DB9AB /* Pods-revolut_ios_testTests_quick_nimble.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

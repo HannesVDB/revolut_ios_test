@@ -39,6 +39,7 @@ class CurrencyCompareViewModel {
     private let database: Persistence
     private let notificationManager: NotificationManaging
     private let service: BackendRequesting
+    private let userDefaults: UserDefaults
     
     private(set) var timer: Timer?
 
@@ -46,10 +47,12 @@ class CurrencyCompareViewModel {
     
     init(database: Persistence = Database.shared,
          notificationManager: NotificationManaging = NotificationManager(),
-         service: BackendRequesting = Service.shared) {
+         service: BackendRequesting = Service.shared,
+         userDefaults: UserDefaults = UserDefaults.standard) {
         self.database = database
         self.notificationManager = notificationManager
         self.service = service
+        self.userDefaults = UserDefaults.standard
     }
     
     // MARK: - Methods

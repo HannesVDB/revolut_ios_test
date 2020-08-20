@@ -11,20 +11,25 @@ import XCTest
 
 class CurrenciesViewModelSpec: XCTestCase {
 
+    // Force unwrapping here is not a problem since we want our tests to fail when something is not set
     var sut: CurrenciesViewModel!
     fileprivate var database: MockCurrenciesPersistence!
+    fileprivate var localStoring: LocalStoring!
     
     override func setUp() {
         database = MockCurrenciesPersistence()
-        sut = CurrenciesViewModel(database: database)
+        localStoring = MockLocalStoring()
+        sut = CurrenciesViewModel(database: database, localStorage: localStoring)
     }
 
-    func testCurrenciesShouldHaveTheCorrectValues() {
+    func testCurrenciesShouldHaveTheCorrectValues() throws {
         let currencies = sut.currencies
         XCTAssertTrue(!currencies.isEmpty)
         XCTAssertEqual(currencies.count, 32)
         let value = currencies.first
-        XCTAssertEqual(value?.currency?.abbreviation, "AUD")
+        // New since Xcode 11
+        let abbreviation = try XCTUnwrap(value?.currency?.abbreviation)
+        XCTAssertEqual(abbreviation, "AUD")
     }
     
     func testDidSelectItemShouldReloadView() {

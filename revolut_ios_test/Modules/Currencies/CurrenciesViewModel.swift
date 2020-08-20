@@ -35,11 +35,13 @@ class CurrenciesViewModel {
     private(set) var selectedCurrency: Currency?
     private(set) var selectedCompareCurrency: Currency?
     private let database: Persistence
+    private let localStorage: LocalStoring
     
     // MARK: - Init
     
-    init(database: Persistence = Database.shared) {
+    init(database: Persistence = Database.shared, localStorage: LocalStoring = LocalStorage()) {
         self.database = database
+        self.localStorage = localStorage
     }
     
     // MARK: - Methods

@@ -15,13 +15,18 @@ class CurrencyCompareViewModelSpec: XCTestCase {
     fileprivate var database: MockCurrenciesPersistence!
     fileprivate var notificationManager: MockNotificationManaging!
     fileprivate var service: MockService!
+    fileprivate var defaults: UserDefaults!
     
     override func setUp() {
         database = MockCurrenciesPersistence()
         service = MockService()
         notificationManager = MockNotificationManaging()
-        
-        sut = CurrencyCompareViewModel(database: database, notificationManager: notificationManager, service: service)
+        defaults = UserDefaults(suiteName: "revolut_ios_test_suite")!
+        sut = CurrencyCompareViewModel(database: database, notificationManager: notificationManager, service: service, userDefaults: defaults)
+    }
+    
+    override func tearDown() {
+        defaults.removePersistentDomain(forName: "revolut_ios_test_suite")
     }
     
     func testReloadDataShouldCallService() {

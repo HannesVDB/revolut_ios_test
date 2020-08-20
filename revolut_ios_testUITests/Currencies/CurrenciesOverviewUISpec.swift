@@ -53,5 +53,4 @@ class CurrenciesOverviewUISpec: XCTestCase {
             app.swipeUp()
             tablesQuery.staticTexts["GBP"].tap()
         }
-
 }

@@ -79,6 +79,9 @@
 		84D9B87D2360BCF30012E377 /* Currencies.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D9B87C2360BCF30012E377 /* Currencies.storyboard */; };
 		84D9B87F2360BCFE0012E377 /* CurrenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9B87E2360BCFE0012E377 /* CurrenciesViewController.swift */; };
 		84D9B8812360BD060012E377 /* CurrenciesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9B8802360BD060012E377 /* CurrenciesViewModel.swift */; };
+		84DAE80824EE40CD00AADBE2 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DAE80724EE40CD00AADBE2 /* Defaults.swift */; };
+		84DAE80B24EE463D00AADBE2 /* MockLocalStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DAE80924EE43DB00AADBE2 /* MockLocalStoring.swift */; };
+		84DAE80C24EE464200AADBE2 /* MockLocalStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DAE80924EE43DB00AADBE2 /* MockLocalStoring.swift */; };
 		84F9147C236211E00038542C /* Database+Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F9147B236211E00038542C /* Database+Currency.swift */; };
 		F988423FF86C5BBC0E80A863 /* Pods_revolut_ios_testTests_quick_nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA0D61DDF990FD42AD1A68AB /* Pods_revolut_ios_testTests_quick_nimble.framework */; };
 		FB2CA69027982CE7A1F2CE5A /* Pods_revolut_ios_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0674AB2BC8522E19FF5D2C8 /* Pods_revolut_ios_testTests.framework */; };
@@ -192,6 +195,8 @@
 		84D9B87C2360BCF30012E377 /* Currencies.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Currencies.storyboard; sourceTree = "<group>"; };
 		84D9B87E2360BCFE0012E377 /* CurrenciesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesViewController.swift; sourceTree = "<group>"; };
 		84D9B8802360BD060012E377 /* CurrenciesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesViewModel.swift; sourceTree = "<group>"; };
+		84DAE80724EE40CD00AADBE2 /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		84DAE80924EE43DB00AADBE2 /* MockLocalStoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocalStoring.swift; sourceTree = "<group>"; };
 		84F9147B236211E00038542C /* Database+Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+Currency.swift"; sourceTree = "<group>"; };
 		A38F6F30D7E0940646069CF0 /* Pods-revolut_ios_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-revolut_ios_test.release.xcconfig"; path = "Target Support Files/Pods-revolut_ios_test/Pods-revolut_ios_test.release.xcconfig"; sourceTree = "<group>"; };
 		B0674AB2BC8522E19FF5D2C8 /* Pods_revolut_ios_testTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_revolut_ios_testTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -460,6 +465,7 @@
 			isa = PBXGroup;
 			children = (
 				84AFFE2224E68DB2005422BF /* MockTableViewCell.swift */,
+				84DAE80924EE43DB00AADBE2 /* MockLocalStoring.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -580,6 +586,7 @@
 				842CF3602362201E0086F63A /* UIView+reuse.swift */,
 				84135E5623677353008841A7 /* UIViewController+describing.swift */,
 				842CF35E23621D9E0086F63A /* Custom Views */,
+				84DAE80724EE40CD00AADBE2 /* Defaults.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -883,6 +890,7 @@
 				84D9B86C2360B69F0012E377 /* Service+Requests.swift in Sources */,
 				84105B8C2360DE1300897773 /* Database.swift in Sources */,
 				842CF36B2362D3AD0086F63A /* NotificationManager.swift in Sources */,
+				84DAE80824EE40CD00AADBE2 /* Defaults.swift in Sources */,
 				844152692360A1F300E4A7B2 /* AppDelegate.swift in Sources */,
 				84D9B8712360B6F70012E377 /* AppConstants.swift in Sources */,
 				84D9B87F2360BCFE0012E377 /* CurrenciesViewController.swift in Sources */,
@@ -908,6 +916,7 @@
 				84B7DBFC23634708000B6702 /* UIView+ReuseSpec.swift in Sources */,
 				84135E602367765C008841A7 /* Database+CurrencySpec.swift in Sources */,
 				84135E62236778D7008841A7 /* DatabaseSpec.swift in Sources */,
+				84DAE80B24EE463D00AADBE2 /* MockLocalStoring.swift in Sources */,
 				84B7DC0F23635036000B6702 /* CurrenciesViewModelSpec.swift in Sources */,
 				84C0876623677EB00068A851 /* CurrenciesViewControllerSpec.swift in Sources */,
 				84B7DBFA236344CA000B6702 /* NotificationManagerSpec.swift in Sources */,
@@ -937,6 +946,7 @@
 				84AFFE1E24E68B88005422BF /* CurrencyLabelSpec.swift in Sources */,
 				84AFFE2624E68E5F005422BF /* UIViewController+Load.swift in Sources */,
 				84AFFE3F24E6B991005422BF /* CurrencyCompareViewControllerSpec.swift in Sources */,
+				84DAE80C24EE464200AADBE2 /* MockLocalStoring.swift in Sources */,
 				84AFFE2024E68D5F005422BF /* CurrencyRateCellSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

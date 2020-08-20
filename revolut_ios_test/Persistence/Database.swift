@@ -11,7 +11,7 @@ import CoreData
 protocol Persistence {
     var currencyPairs: [CurrencyPair]? { get }
     func persist(pair: CurrencyPair)
-    func deleteCurrencyPair(_ pair: CurrencyPair)
+    func delete(pair: CurrencyPair)
     func deleteAll()
 }
 
@@ -75,7 +75,7 @@ class Database: Persistence {
     }
     
     func deleteAll() {
-        let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "CDCurrencyPair")
+        let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "CDCurrencyPair") // TODO: Create set with all entities
         let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
 
         do {

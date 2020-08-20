@@ -73,7 +73,7 @@ class CurrencyCompareViewModel {
     
     func delete(at row: Int) {
         guard let pair = currencyPairs?[row].currencyPair else { return }
-        database.deleteCurrencyPair(pair)
+        database.delete(pair: pair)
     }
 }
 

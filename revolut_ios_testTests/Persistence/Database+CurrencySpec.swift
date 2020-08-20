@@ -45,7 +45,7 @@ class Database_CurrencySpec: XCTestCase {
         let pair = CurrencyPair(id: "1", currency: Currency(abbreviation: "USD"), comparisonCurrency: Currency(abbreviation: "EUR"), dateAdded: Date())
         sut.persist(pair: pair)
         XCTAssertEqual(sut.currencyPairs?.count, 1)
-        sut.deleteCurrencyPair(pair)
+        sut.delete(pair: pair)
         XCTAssertEqual(sut.currencyPairs?.count, 0)
     }
 }

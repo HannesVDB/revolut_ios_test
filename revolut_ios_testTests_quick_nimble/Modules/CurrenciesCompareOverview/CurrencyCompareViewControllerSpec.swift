@@ -49,7 +49,7 @@ class MockPersistence: Persistence {
         return nil
     }
     
-    func deleteCurrencyPair(_ pair: CurrencyPair) {
+    func delete(pair: CurrencyPair) {
         
     }
     

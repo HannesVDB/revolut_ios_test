@@ -100,7 +100,7 @@ fileprivate class MockCurrenciesPersistence: MockPersistence {
         return [CurrencyPair(currency: Currency(abbreviation: "EUR"), comparisonCurrency: Currency(abbreviation: "USD"))]
     }
     
-    override func deleteCurrencyPair(_ pair: CurrencyPair) {
+    override func delete(pair: CurrencyPair) {
         deleteCalled = true
     }
 }

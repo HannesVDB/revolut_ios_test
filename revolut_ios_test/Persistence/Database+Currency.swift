@@ -33,7 +33,7 @@ extension Database {
         return fetch(for: CDCurrencyPair.self, with: primaryKey)
     }
     
-    func deleteCurrencyPair(_ pair: CurrencyPair) {
+    func delete(pair: CurrencyPair) {
         guard let pair = currencyPair(for: pair.id) else { return }
         delete(value: pair)
     }
